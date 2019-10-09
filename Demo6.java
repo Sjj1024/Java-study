@@ -36,5 +36,12 @@ public class Demo6{
 		// byte + byte ---> int + int ---> int
 		int res = num5 + num6; 
 		System.out.println(res);
+		// short类型转换成int
+		short num7 = 60;
+		short res2 = (short) (num7 + num6);
+		System.out.println(res2);
+		// 字符0 使用48表示，字母A 使用65表示，字母a 使用97表示
+		char zifu3 = '0';
+		System.out.println(zifu3 + 0);  // 输出48，A表示65，a表示97
 	}
 }
