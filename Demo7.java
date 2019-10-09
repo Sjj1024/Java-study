@@ -13,5 +13,6 @@ public class Demo7{
 		int b = 30;
 		System.out.println(a + b);
 		System.out.println(a / 2.5);
+		System.out.println(a % 2.5);
 	}
 }
