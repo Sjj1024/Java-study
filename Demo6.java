@@ -12,6 +12,9 @@ public class Demo6{
 		float num1 = 100;
 		System.out.println(num1);
 		
-		// 
+		// 强制类型转换:特点，代码需要进行特殊的个数处理，
+		// 格式：范围小的类型 范围小的变量名 = （范围小的类型）原本范围的数据
+		int num2 = (int) 100L;
+		System.out.println(num2);
 	}
 }
