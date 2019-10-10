@@ -4,6 +4,8 @@
 除法：整数除整数，得到的还是整数，不看余数
 取余运算符：% 
 一旦运算当中有不同类型的数据，那么结果将会是数据类型范围大的那种.
+任何数据类型和字符串连接，都会变成str类型
+优先级问题：str + int + int 最后都是str后再相加
 */
 
 public class Demo7{
@@ -14,5 +16,7 @@ public class Demo7{
 		System.out.println(a + b);
 		System.out.println(a / 2.5);
 		System.out.println(a % 2.5);
+		System.out.println("我爱你" + "中国");
+		System.out.println("我爱你" + 20);
 	}
 }
