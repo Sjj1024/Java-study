@@ -31,6 +31,14 @@ a++ 先使用a，再加一
 	<=
 	>=
 	!=
+逻辑运算符：
+与 &&
+或 ||
+非 ！
+	
+一元运算符：只需要一个数据就可以进行操作的运算符，例如++，--，！
+二元运算符：需要两个数据才可以操作的运算符，例如-，+，*，/
+三元运算符：需要三个数据需要操作的，格式： 数据类型 变量名称 = 条件判断？表达式A，表达式B；
 
 */
 
@@ -48,5 +56,12 @@ public class Demo7{
 		System.out.println(++a);
 		System.out.println(a++);
 		System.out.println(a);
+		// 逻辑运算符：
+		System.out.println(! true);
+		int c = 20;
+		System.out.println(c);
+		// 三元运算符
+		int max = a > b ? a : b;
+		System.out.println(max);
 	}
 }
