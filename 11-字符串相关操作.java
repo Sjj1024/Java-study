@@ -63,5 +63,28 @@ public class StrTest {
         String str9 = str7.substring(5, 8);
         System.out.println("指定区间的字符串是:".concat(str9));
 
+        // string当中转换相关的常用方法:toCharArray（），getBytes(),replace()
+        // toCharArray()将当前字符串拆分成字符数组作为返回值
+        char[] chars = str7.toCharArray();
+        System.out.println("转换后的字符数组是：" + chars);
+
+        // getBytes()获取字节数组，在io流时特别常用
+        byte[] bytes = str7.getBytes();
+        System.out.println("获取到的字节数组是：");
+        for (int i = 0; i < bytes.length; i++) {
+            System.out.println(bytes[i]);
+        }
+
+        // replace替换字符串
+        String str10 = str7.replace("s", "*");
+        System.out.println("替换后的字符串是:".concat(str10));
+
+        // 字符串的分割方法split(),按照参数的规则，将字符串切分成若干部分
+        // 其实参数是一个正则表达式:
+        String[] strarray1 = str7.split("a");
+        System.out.println("切后的字符串数组是：");
+        for (int i = 0; i < strarray1.length; i++) {
+            System.out.println(strarray1[i]);
+        }
     }
 }
