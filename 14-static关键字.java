@@ -7,6 +7,14 @@ public class Student {
     private int id;
     static int idcount; // 通过创建对象时候自动增加实现每个用户有唯一ID
 
+    public static void staticmethod(){
+        System.out.println("此方法是静态方法，属于类方法，可以直接使用类名称调用");
+    }
+
+    public void method(){
+        System.out.println("此方法是对象方法，必须创建对象后才可以使用");
+    }
+
     public int getId() {
         return id;
     }
