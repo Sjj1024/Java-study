@@ -8,11 +8,15 @@ public class Student {
     static int idcount; // 通过创建对象时候自动增加实现每个用户有唯一ID
 
     public static void staticmethod(){
+        // 静态只能访问静态属性或方法，不能使用this关键字
         System.out.println("此方法是静态方法，属于类方法，可以直接使用类名称调用");
+        System.out.println("使用静态属性:" + idcount);
     }
 
     public void method(){
+        // 非静态既可以访问静态，也可以访问非静态的
         System.out.println("此方法是对象方法，必须创建对象后才可以使用");
+        System.out.println("使用静态和非静态属性:" + this.name + room);
     }
 
     public int getId() {
