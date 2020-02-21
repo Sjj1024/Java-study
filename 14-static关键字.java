@@ -19,6 +19,12 @@ public class Student {
         System.out.println("使用静态和非静态属性:" + this.name + room);
     }
 
+    // 静态代码块
+    static {
+        // 静态代码块而且是优先执行的，用途：用来一次性地对静态成员变量进行赋值
+        System.out.println("静态代码块执行了！当第一次用到本类时，静态代码块就执行一次");
+    }
+
     public int getId() {
         return id;
     }
