@@ -10,6 +10,7 @@ public class Body {
             System.out.println("心脏在跳动");
             System.out.println(num);
             System.out.println("内部类的成员属性" + num);
+            // 外部类名称.this.外部类属性
             System.out.println("外部类的成员属性" + Body.this.num);
         }
     }
