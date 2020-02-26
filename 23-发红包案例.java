@@ -25,3 +25,42 @@ public class StartHong {
         three.showmoney();
     }
 }
+
+
+群主和成员共有的父类：
+package HongBao;
+
+public class Person {
+    String name = "";
+    double mymoney = 0;
+
+    public Person() {
+    }
+
+    public Person(String name, double mymoney) {
+        this.name = name;
+        this.mymoney = mymoney;
+    }
+
+    public void showmoney(){
+        System.out.println(this.name + "最后有" + this.getMymoney() + "元");
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public double getMymoney() {
+        return mymoney;
+    }
+
+    public void setMymoney(double mymoney) {
+        this.mymoney = mymoney;
+    }
+}
+
+
