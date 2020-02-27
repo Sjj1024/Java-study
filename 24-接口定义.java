@@ -19,6 +19,12 @@ package JieKou;
  * 默认方法：为了解决接口升级的问题，定义格式：
  * public default void 方法名字(){方法体}
  * 实现类中不必覆盖这个默认方法，仍然可以使用这个接口类，并使用这个默认方法
+ *
+ * 接口是一种极度抽象的类型，它比抽象类更加“抽象”,因为接口只定义了方法，一般不定义属性，而类具有对象的层次，
+ * 比如插座接口，并不需要一个类，只需要按照指定的规范方法实现，就可以了，
+ *
+ * 对于抽象类，如果需要添加新的方法，可以直接在抽象类中添加具体的实现，子类可以不进行变更；
+ * 而对于接口则不行，如果接口进行了变更，则所有实现这个接口的类都必须进行相应的改动。
  * */
 public interface MyInter {
     public abstract void method1();
@@ -32,5 +38,11 @@ public interface MyInter {
     // 定义默认方法接口，其中public 可以省略不写，
     public default void methoddefault(){
         System.out.println("我是接口中的默认方法");
+    }
+
+    // java8中可以在接口中定义静态方法，调用的时候，使用接口.静态方法
+    // public 可以省略
+    public static void methodstatic(){
+        System.out.println("接口中的静态方法！");
     }
 }
