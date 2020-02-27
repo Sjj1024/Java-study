@@ -15,6 +15,10 @@ package JieKou;
  *
  * 接口的使用步骤：
  * 1.接口不能直接使用，必须有一个实现类来实现该接口
+ *
+ * 默认方法：为了解决接口升级的问题，定义格式：
+ * public default void 方法名字(){方法体}
+ * 实现类中不必覆盖这个默认方法，仍然可以使用这个接口类，并使用这个默认方法
  * */
 public interface MyInter {
     public abstract void method1();
@@ -24,4 +28,9 @@ public interface MyInter {
     abstract void method3();
 
     void method4();
+
+    // 定义默认方法接口，其中public 可以省略不写，
+    public default void methoddefault(){
+        System.out.println("我是接口中的默认方法");
+    }
 }
