@@ -25,6 +25,15 @@ package JieKou;
  *
  * 对于抽象类，如果需要添加新的方法，可以直接在抽象类中添加具体的实现，子类可以不进行变更；
  * 而对于接口则不行，如果接口进行了变更，则所有实现这个接口的类都必须进行相应的改动。
+ *
+ * 接口中也可以定义自己的成员常量：但必须使用public static final三个关键字修饰
+ * 从效果上看，这其实就是接口的常量，格式：public static final 数据类型 常量名称 = 数值；
+ * 一旦被final修饰符修饰，说明不可以更改！
+ *
+ * 接口当中的常量可以省略public static final，不写，也照样不可修改
+ * 使用的时候，使用接口名.常量名称
+ * 
+ * 一个类只能继承一个父类，但是可以实现多个接口，用逗号隔开
  * */
 public interface MyInter {
     public abstract void method1();
@@ -41,8 +50,11 @@ public interface MyInter {
     }
 
     // java8中可以在接口中定义静态方法，调用的时候，使用接口.静态方法
-    // public 可以省略
+    // public 可以省略,不能使用实现类对象调用接口静态方法
     public static void methodstatic(){
         System.out.println("接口中的静态方法！");
     }
+
+    // 定义接口中的常量：一定进行明确的赋值
+    public static final int NUM_CLASS = 12;
 }
