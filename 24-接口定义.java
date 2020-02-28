@@ -32,10 +32,19 @@ package JieKou;
  *
  * 接口当中的常量可以省略public static final，不写，也照样不可修改
  * 使用的时候，使用接口名.常量名称
- * 
+ *
  * 一个类只能继承一个父类，但是可以实现多个接口，用逗号隔开
+ * 如果两个接口有重复的接口方法，只需要覆盖重写一次就可以；
+ * 如果两个接口有重复的默认方法，就需要覆盖重写默认方法；
+ * 继承是优先于父类的，如果父类和接口中有相同的方法，会先执行父类中的方法
+ *
+ * 类和接口之间的关系：
+ * 类与类之间是单继承的
+ * 类与接口之间是多实现的
+ * 接口与接口之间是多继承的，
+ * 接口也可以多继承,子接口必须对父接口默认方法的覆盖重写，而且带着default关键字
  * */
-public interface MyInter {
+public interface MyInter extends MyInterB{
     public abstract void method1();
 
     public void method2();
