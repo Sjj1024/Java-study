@@ -28,5 +28,17 @@ public class Timer {
         }catch(Exception e){
             System.out.printf("获得一个异常");
         }
+
+        // 如何测量时间间隔或消耗了多长时间
+        System.out.printf("-----------------");
+        long start = System.currentTimeMillis();
+        try {
+            Thread.sleep(1000*3);
+        }catch (Exception e){
+            System.out.printf("捕获到一个异常");
+        }
+        long ends = System.currentTimeMillis();
+        long lose = ends - start;
+        System.out.printf("消耗时间是；" + lose);
     }
 }
