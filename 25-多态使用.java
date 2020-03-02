@@ -21,7 +21,21 @@ public class test {
         first.ShouName();
 
         // 使用接口创建子类对象
-        TestInter second = new TestSon();
+        TestInter second = new Dog();
         second.Flay();
+
+        // 如何知道一个父类引用的对象，本来是什么子类?
+        // 使用格式： 对象 instanceof 类名称,返回一个布尔值
+        // 对象的向下转型,本来是动物，转成狗，就会出现类型转换错误ClassCastException
+//        Dog hashiqi = (Dog) second; 这种写法是错误的
+        if(second instanceof TestSon){
+            System.out.println("判断secone是testson子类");
+            second.Flay();
+        }
+
+        if (second instanceof Dog){
+            System.out.println("判断secone是dog子类");
+            second.Flay();
+        }
     }
 }
