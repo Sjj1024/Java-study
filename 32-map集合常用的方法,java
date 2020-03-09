@@ -1,0 +1,40 @@
+package JiHe;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapDemo {
+    public static void main(String[] args) {
+        System.out.println("Map接口集合使用,类似于Python中的字典");
+        // 键是不允许重复的,值可以重复,键和值得数据类型可以不一样
+        // 使用HasjMap是无序的集合，不同步的，速度快，LinkedHashMap是有序的集合，
+        Map<String, String> dict1 = new HashMap<>();
+
+        // 添加元素put,返回的是值，键不重复，返回的是null
+        String put = dict1.put("姓名", "王健林");
+        System.out.println(dict1);
+        System.out.println(put);
+        System.out.println("------------------------");
+        // 如果添加的键已经存在，就是替换操作，返回新的值
+        String put2 = dict1.put("姓名", "王思聪");
+        dict1.put("年龄", "18");
+        dict1.put("性别", "男");
+        System.out.println(dict1);
+        System.out.println(put2);
+        // remove方法，key存在，返回被删除的值，key不存在返回空
+        System.out.println("------------------------");
+        String xing = dict1.remove("性别");
+        System.out.println(dict1);
+        System.out.println(xing);
+
+        // get方法：通过键返回值，key存在返回值，key不存在，返回null
+        String bie = dict1.get("姓名");
+        System.out.println(bie);
+
+        // 判断集合中是否包含相对应的键和值，包含返回true
+        System.out.println("-------------------------");
+        System.out.println(dict1.containsKey("年龄"));
+        System.out.println(dict1.containsValue("18"));
+        System.out.println(dict1.containsValue("19"));
+    }
+}
