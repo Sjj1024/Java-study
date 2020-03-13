@@ -1,0 +1,49 @@
+package IOliu;
+
+import java.io.*;
+
+public class Test2 {
+    public static void main(String[] args) throws IOException {
+        System.out.printf("文件的复制功能演示");
+        // 文件的复制就是从硬盘上读取字节文件，然后再将读到的文件写入到目标文件中
+//        filecopy1();
+        filebuffercopy();
+    }
+
+    private static void filebuffercopy() throws IOException {
+        // 使用缓存流处理，提高复制效率共花费时间是:906
+        System.out.println("使用数据缓存复制文件提高复制效率");
+        long start = System.currentTimeMillis();
+        FileInputStream fis = new FileInputStream("D:\\tools\\Something.zip");
+        BufferedInputStream bufinput = new BufferedInputStream(fis);  // 默认缓存是8k
+        FileOutputStream fout = new FileOutputStream("D:\\图片\\copy2.zip");
+        BufferedOutputStream bufoutput = new BufferedOutputStream(fout);
+        byte[] content = new byte[1024];
+        int read = bufinput.read(content);
+        while (read != -1){
+            bufoutput.write(content);
+            // 实际将文件写入到硬盘的方法
+            bufoutput.flush();
+            read = bufinput.read(content);
+        }
+        long ends = System.currentTimeMillis();
+        System.out.println("共花费时间是:" + (ends - start));
+    }
+
+    private static void filecopy1() throws IOException {
+        // 创建文件出入流，和文件输出流对象共花费时间是:5572
+        long start = System.currentTimeMillis();
+        FileInputStream fis = new FileInputStream("D:\\tools\\Something.zip");
+        FileOutputStream fos = new FileOutputStream("D:\\图片\\copy2.zip");
+        // 创建一个字节数组，存储读取到的数据，然后将字节数组中的数据写入到目标文件中
+        byte[] content = new byte[1024];
+        int len = fis.read(content);
+        while (len != -1) {
+            System.out.println("正在复制文件------->");
+            fos.write(content);
+            len = fis.read(content);
+        }
+        long ends = System.currentTimeMillis();
+        System.out.println("共花费时间是:" + (ends - start));
+    }
+}
