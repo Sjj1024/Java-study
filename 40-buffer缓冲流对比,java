@@ -7,6 +7,7 @@ public class Test2 {
         System.out.printf("文件的复制功能演示");
         // 文件的复制就是从硬盘上读取字节文件，然后再将读到的文件写入到目标文件中
 //        filecopy1();
+        // 使用缓存的作用：减少磁盘的io操作，等读取到缓存中的数据满了再返回数据，减少了没必要的io操作，所以快
         filebuffercopy();
     }
 
