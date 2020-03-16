@@ -26,10 +26,20 @@ public class BianMa {
         // utf-8是用的最多的编码，
         // FileRead默认只会读取系统默认编码格式的内容,所以可以使用转换流InputStreanmReader,可以指定指定的码表，OutputStreamReader也是一个转换流
         InputStreamReader input = new InputStreamReader(new FileInputStream("dier.txt"), "utf-8");
-        int read = input.read();
+        char[] content = new char[1024];
+        int read = input.read(content);
+        // 创建将文件写入硬盘的转换流gbk格式的
+        OutputStreamWriter outwrite = new OutputStreamWriter(new FileOutputStream("gbk.txt"), "gbk");
         while (read != -1) {
-            System.out.println((char)read);
+            // 将文件写入磁盘中
+            outwrite.write(content);
+            outwrite.flush();
+            System.out.println(new String(content));
             read = input.read();
         }
+        // 关闭转换流对象
+        input.close();
+        outwrite.close();
+
     }
 }
