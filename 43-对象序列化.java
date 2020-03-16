@@ -25,5 +25,8 @@ public class XuLieHua {
         // 使用强制转换，将读取到的对象转换成Person类
         Person second = (Person)obj;
         System.out.println(second.getName() + second.getAge());
+
+        // 类中的静态关键static是和对象没有关系的，而且静态优先于类加载到内存中，所以序列化的时候，是不能保存静态内容的
+        // 瞬态关键字也是一样，不能在序列化的时候将内容保存到硬盘中,transient修饰的内容，默认保存的都是默认值
     }
 }
