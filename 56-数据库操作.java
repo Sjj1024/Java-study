@@ -18,7 +18,7 @@ drop database 数据库名称;
 drop database if exits 数据库名称; # 如果存在就删除
 
 
-数据表的操作：CRUD
+2、数据表的操作：CRUD
 show :查询数据表
 show tables;
 desc 表名; # 查看表中数据结构
@@ -48,3 +48,29 @@ alter table 表明 modify 列名 varchar(10);
 
 删除列：
 alter table 表名 drop 列名;
+
+
+
+3、增删改表中的数据
+添加数据：insert
+insert into 表名(列名，列名， 列名) value(值，值，值);
+
+删除数据：delete 
+delete from 表名 where id=1;
+delete from 表名; 表示删除表中所有记录
+truncate table 表名; 删除表，然后创建一个一模一样的空表
+
+
+修改数据：update
+update student set age = 19 where id=1;
+update student set age = 20, score =100 where id =2;
+
+
+查询数据:select
+select * from 表明; 查询所有的列数据
+完整的查询语句组成：SFWGHOL
+select 字段列表 from 表名列表 where 条件列表 group by 分组字段 having 分组之后的条件 order by 排序 limit 分页限定;
+
+去重查看结果:
+select distinct name from student;
+
