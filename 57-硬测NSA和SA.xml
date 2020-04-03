@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><Testcase business="nr" name="" product="">
+<DutConfig/>
+<CarrConfig carrier="PCC" name="L1" rat="LTE">
+<Config bandwidth="5MHz" freq="Mid" mod="QPSK" rballocation="0@0"/>
+<Config bandwidth="5MHz" freq="Mid" mod="QPSK" rballocation="0@0"/>
+<Config bandwidth="5MHz" freq="Mid" mod="QPSK" rballocation="0@0"/>
+<Config bandwidth="5MHz" freq="Mid" mod="QPSK" rballocation="0@0"/>
+</CarrConfig>
+<CarrConfig carrier="PCC" name="N1" rat="NR">
+<Config bandwidth="5MHz,10MHz,15MHz,20MHz,30MHz,40MHz,50MHz,60MHz,80MHz,90MHz,100MHz" freq="Low,Mid,High" mod="CP-OFDM" mod_dl="CP-OFDM QPSK" rballocation="Edge_1RB_Left" rballocation_dl="Table 7.3.2.4.1-2" scs="15kHz,30kHz"/>
+<Config bandwidth="5MHz,10MHz,15MHz,20MHz,30MHz,40MHz,50MHz,60MHz,80MHz,90MHz,100MHz" freq="Low,Mid,High" mod="CP-OFDM" mod_dl="CP-OFDM QPSK" rballocation="Edge_1RB_Right" rballocation_dl="Table 7.3.2.4.1-2" scs="15kHz,30kHz"/>
+<Config bandwidth="5MHz,10MHz,15MHz,20MHz,30MHz,40MHz,50MHz,60MHz,80MHz,90MHz,100MHz" freq="Low,Mid,High" mod="DFT-s-OFDM" mod_dl="CP-OFDM QPSK" rballocation="Edge_1RB_Left" rballocation_dl="Table 7.3.2.4.1-2" scs="15kHz,30kHz"/>
+<Config bandwidth="5MHz,10MHz,15MHz,20MHz,30MHz,40MHz,50MHz,60MHz,80MHz,90MHz,100MHz" freq="Low,Mid,High" mod="DFT-s-OFDM" mod_dl="CP-OFDM QPSK" rballocation="Edge_1RB_Right" rballocation_dl="Table 7.3.2.4.1-2" scs="15kHz,30kHz"/>
+</CarrConfig>
+<TestConfig>
+<testConfig testitem="6.4B.2.3.3 In-band Emissions for inter-band EN-DC within FR1-PUCCH" traversaltype="顺序"/>
+</TestConfig>
+</Testcase>
