@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+xml语法比较严格，开头第一行必须是文档声明，
+文档中有且仅有一个根标签
+属性值必须使用引号引起来
+标签必须正确关闭
+xml标签名称区分大小写
+标签属性命名规则:
+可以包含数字字母以及其他字符
+不能以数字或者标签符号开始
+名称不能以字母xml开始
+名称不能包含空格
+
+属性id值唯一
+文本如果想原样展示，就使用CDATA区：
+<![CDATA[ 数据 ]]>
+-->
+<users>
+    <user>
+        <name>张三</name>
+        <age>18</age>
+        <gendal>男</gendal>
+    </user>
+    <user>
+        <name>李四</name>
+        <age>18</age>
+        <gendal>nv</gendal>
+    </user>
+<!--    下面内容中的数据就会被原样展示    -->
+    <![CDATA[ shuju if $@#%^&*() ]]>
+</users>
