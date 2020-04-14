@@ -12,18 +12,18 @@ public class JDBCTest {
             Class.forName("com.mysql.jdbc.Driver");
             //创建连接
             //java10为数据库名
-            String url="jdbc:mysql://localhost:3306/tushu?useSSL=false&serverTimezone=UTC";
-            String username="root";
-            String userpwd="xiaoshen";
-            Connection conn = DriverManager.getConnection(url,username,userpwd);
+            String url = "jdbc:mysql://localhost:3306/tushu?useSSL=false&serverTimezone=UTC";
+            String username = "root";
+            String userpwd = "xiaoshen";
+            Connection conn = DriverManager.getConnection(url, username, userpwd);
 
             //创建Statement，执行sql
-            Statement st=conn.createStatement();
-            ResultSet rs=st.executeQuery("SELECT * FROM student");
-            while(rs.next()){
-                System.out.println("名字"+rs.getString("name"));
-                System.out.println("年齡"+rs.getInt("age"));
-                System.out.println("性別"+rs.getString("score"));
+            Statement st = conn.createStatement();
+            ResultSet rs = st.executeQuery("SELECT * FROM student");
+            while (rs.next()) {
+                System.out.println("名字" + rs.getString("name"));
+                System.out.println("年齡" + rs.getInt("age"));
+                System.out.println("性別" + rs.getString("score"));
             }
 
             //关闭连接
