@@ -107,3 +107,13 @@ public class DruidUtils {
         }
     }
 }
+
+
+// druid.properties配置文件格式:
+driverClassName=com.mysql.jdbc.Driver
+url=jdbc:mysql://localhost:3306/tushu?useSSL=false&serverTimezone=UTC
+username=root
+password=xiaoshen
+initialSize=5
+maxActive=10
+maxWait=3000
