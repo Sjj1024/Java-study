@@ -25,6 +25,7 @@
   request, response, out
   out对象的print方法，可以将参数输出到页面上
   但是和response对象的write方法不同的是，无论如何，网页都会先加载response对象的write方法的内容，再输出out对象的内容
+  所以建议以后都使用out对象输出内容到页面上，这样就不会出现格式混乱的问题
   <%
       response.getWriter().write("11111111111111111111");
       String realPath = request.getServletContext().getRealPath("");
