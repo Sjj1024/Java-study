@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ选择器选中元素</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 实现按钮1的功能
+            $("#but1").click(function () {
+                $("#1").css("background", "pink");
+            });
+            // 实现按钮2的功能
+            $("#but2").click(function () {
+                $("div").css("background", "pink");
+            });
+            // 实现按钮3的功能,使用到并集选择器，同时选中id和class属性
+            $("#but3").click(function () {
+                $("#3, .div").css("background", "pink");
+            });
+
+            // 使用属性选择器,选中class等于s2的span标签，
+            $("span.s2").css("background", "blue");
+            // 使用子选择器，选中span下的子span元素
+            $("span .s4").css("font-size", "20px");
+            $(".s4").click(function () {
+                // 元素隐藏时间
+                $(this).hide();
+            });
+
+            // 绑定了鼠标移动进去和移走的事件
+            $(".p1").mouseenter(function () {
+                alert("鼠标移动到了元素上");
+            });
+            $(".p1").mouseleave(function () {
+                alert("鼠标移开了元素");
+            });
+
+            // 将元素隐藏或显示，后面可跟参数表示隐藏或显示的快慢,也可不跟参数，会立即显示或隐藏，毫秒值
+            $("#but4").click(function () {
+                // 参数可以是slow和fast，也可以是毫秒值
+                $("#4").hide("slow");
+            });
+            // 将元素隐藏或显示
+            $("#but5").click(function () {
+                $("#4").show(1000);
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <input type="button" value="按钮1,改变id为1的div背景为粉红色" id="but1">
+    <input type="button" value="按钮2,改变div背景为粉红色" id="but2">
+    <input type="button" value="改变id为1和class为div的背景为粉红色" id="but3">
+    <input type="button" value="将div为4的元素隐藏" id="but4">
+    <input type="button" value="将div为4的元素显示出来" id="but5">
+</div>
+<div style="margin-top: 100px">
+    <div id="1" style="width: 100px; height: 100px;">id为1</div>
+    <div id="2" style="width: 100px; height: 100px;">id为2</div>
+    <div id="3" style="width: 100px; height: 100px;">id为3</div>
+    <div id="4" class="div">id为4</div>
+    <div id="5" class="div">id为5</div>
+    <span class="s1">
+        <span class="s2">span的子元素</span>
+        <span class="s3">
+            span的子元素
+            <span class="s4">span的孙子元素</span>
+        </span>
+    </span>
+    <p class="p1">绑定了鼠标移动事件</p>
+</div>
+</body>
+</html>
