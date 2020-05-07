@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ选择器选中元素</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 实现按钮1的功能
+            $("#but1").click(function () {
+                $("#1").css("background", "pink");
+            });
+            // 实现按钮2的功能
+            $("#but2").click(function () {
+                $("div").css("background", "pink");
+            });
+            // 实现按钮3的功能,使用到并集选择器，同时选中id和class属性
+            $("#but3").click(function () {
+                $("#3, .div").css("background", "pink");
+            });
+        });
+    </script>
+</head>
+<body>
+<div>
+    <input type="button" value="按钮1,改变id为1的div背景为粉红色" id="but1">
+    <input type="button" value="按钮2,改变div背景为粉红色" id="but2">
+    <input type="button" value="按钮3,改变id为1和class为div的背景为粉红色" id="but3">
+</div>
+<div style="margin-top: 100px">
+    <div id="1" style="width: 100px; height: 100px;">id为1</div>
+    <div id="2" style="width: 100px; height: 100px;">id为2</div>
+    <div id="3" style="width: 100px; height: 100px;">id为3</div>
+    <div id="4" class="div">id为4</div>
+    <div id="5" class="div">id为5</div>
+</div>
+</body>
+</html>
