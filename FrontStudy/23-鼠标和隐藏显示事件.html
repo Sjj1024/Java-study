@@ -45,6 +45,10 @@
             $("#but5").click(function () {
                 $("#4").show(1000);
             });
+            // 使用开关toggle切换显示
+            $("#but6").click(function () {
+                $("#3").toggle();
+            });
         });
     </script>
 </head>
@@ -55,6 +59,7 @@
     <input type="button" value="改变id为1和class为div的背景为粉红色" id="but3">
     <input type="button" value="将div为4的元素隐藏" id="but4">
     <input type="button" value="将div为4的元素显示出来" id="but5">
+    <input type="button" value="使用开关toggle切换隐藏显示" id="but6">
 </div>
 <div style="margin-top: 100px">
     <div id="1" style="width: 100px; height: 100px;">id为1</div>
