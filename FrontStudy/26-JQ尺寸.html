@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jq尺寸</title>
+    <style>
+        .d1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            padding: 10px;
+            margin: 5px;
+            background: pink;
+        }
+    </style>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".but1").click(function () {
+                var text = "";
+                text = "组件的尺寸是：width" + $(".d1").width() + "height是:" + $(".d1").height();
+                $(".res1").html(text)
+            });
+            $(".but2").click(function () {
+                var text = "";
+                text = "组件的尺寸是：width" + $(".d1").innerWidth() + "height是:" + $(".d1").innerHeight();
+                $(".res2").html(text)
+            });
+            $(".but3").click(function () {
+                var text = "";
+                text = "组件的尺寸是：width" + $(".d1").outerWidth() + "height是:" + $(".d1").outerHeight();
+                $(".res3").html(text)
+            });
+        })
+    </script>
+</head>
+<body>
+<input type="button" value="获取width和height" class="but1">
+<input type="button" value="获取innerWidth和innerHeight" class="but2">
+<input type="button" value="获取outerWidth和outerHeight" class="but3">
+<div class="d1">
+    这里是div标签
+</div>
+<div class="res1">
+</div>
+<br>
+<div class="res2">
+</div>
+<div class="res3">
+</div>
+</body>
+</html>
