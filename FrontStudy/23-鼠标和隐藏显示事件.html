@@ -41,13 +41,17 @@
                 // 参数可以是slow和fast，也可以是毫秒值
                 $("#4").hide("slow");
             });
-            // 将元素隐藏或显示
+            // 将元素隐藏或显示，有一种类似折叠效果
             $("#but5").click(function () {
                 $("#4").show(1000);
             });
-            // 使用开关toggle切换显示
+            // 使用开关toggle切换显示,后面也可以跟上参数"slow"、"fast"，或者回调函数
             $("#but6").click(function () {
-                $("#3").toggle();
+                $("#3").toggle("slow");
+            });
+            // 使用淡入淡出效果，元素慢慢消失不见
+            $("#but7").click(function () {
+                $("#2").fadeToggle("slow");
             });
         });
     </script>
@@ -60,6 +64,7 @@
     <input type="button" value="将div为4的元素隐藏" id="but4">
     <input type="button" value="将div为4的元素显示出来" id="but5">
     <input type="button" value="使用开关toggle切换隐藏显示" id="but6">
+    <input type="button" value="使用淡入淡出效果fadetoggle" id="but7">
 </div>
 <div style="margin-top: 100px">
     <div id="1" style="width: 100px; height: 100px;">id为1</div>
