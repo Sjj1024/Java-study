@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JQ文档树加载完才执行jq代码</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        // 需要先引入jq库，才可以使用jq获取元素等
+        $(function () {  // 此处是jq的入口函数，也就是说当页面加载完之后，才会执行这里面的代码
+            $("#1").html("被JQ改变了的元素内容");
+            // 绑定事件
+            $("#but").click(function () {
+                alert("按钮被点击了");
+            });
+
+            // 使用css属性直接修改样式, 如果是一个样式，直接填入键，值
+            $("#2").css("background", "red");
+
+            // 如果是两个以上元素，需要传入一个json对象
+            $("#3").css({"background-color":"yellow", "font-size":"200%"});
+
+        });
+    </script>
+</head>
+<body>
+<div id="1">第一</div>
+<div id="2">第二</div>
+<div id="3">第三</div>
+<input type="button" id="but" value="按钮事件">
+</body>
+</html>
