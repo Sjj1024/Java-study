@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GET和POST方法</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // $.get(URL,callback);
+            $(".but1").click(function () {
+                $.get("https://www.runoob.com/jquery/jquery-ajax-get-post.html",function (data, status) {
+                    alert(data);
+                });
+            });
+            
+            // $.post() 方法通过 HTTP POST 请求向服务器提交数据。
+            $(".but2").click(function () {
+                $.post("https://www.runoob.com/jquery/jquery-ajax-get-post.html", {"name": "xiasong"}, function (data, status) {
+                    alert(data);
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+<div>
+    <div>
+        <input type="button" value="点击发送GET请求" class="but1">
+        <input type="button" value="点击发送POST请求" class="but2">
+    </div>
+    <div class="res">
+        结果展示在这里
+    </div>
+</div>
+</body>
+</html>
