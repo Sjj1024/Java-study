@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过祖孙父子关系查找元素</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 使用parent()方法，获取到选中元素的直接父类
+            $(".but1").click(function () {
+                var text = "";
+                text = "元素的父元素是" + $("span").parent().text();
+                $(".res1").html(text);
+            });
+            // 使用parents()方法，获取到选中元素的直接父类
+            $(".but2").click(function () {
+                var text = "";
+                text = "元素的父元素是" + $("span").parents("ul");
+                $(".res2").html(text);
+            });
+            // 找到选中元素的所有直接子元素
+            $(".but3").click(function () {
+                var text = "";
+                // 可以通过传递参数，直接过滤子元素
+                // text = "元素的子元素是" + $("li").children().text();
+                text = "元素的子元素是" + $("li").children("p").text();
+                $(".res2").html(text);
+            });
+
+            // find() 方法返回被选元素的后代元素，一路向下直到最后一个后代。
+            $(".but4").click(function () {
+                var text = "";
+                // 可以通过传递参数，直接过滤子元素
+                // text = "元素的子元素是" + $("li").children().text();
+                text = "元素的子元素是" + $("ul").find("li").text();
+                $(".res2").html(text);
+            });
+
+            // siblings方法返回被选元素的所有同胞元素
+            $(".but5").click(function () {
+                var text = "";
+                // 可以通过传递参数，直接过滤子元素
+                // text = "元素的子元素是" + $("li").children().text();
+                text = "元素的子元素是" + $(".li1").siblings().text();
+                $(".res2").html(text);
+            });
+
+            // next方法返回被选元素的下一个同胞元素
+            $(".but6").click(function () {
+                var text = "";
+                // 可以通过传递参数，直接过滤子元素
+                // text = "元素的子元素是" + $("li").children().text();
+                text = "元素的子元素是" + $(".li1").next().text();
+                $(".res2").html(text);
+            });
+
+            // nextAll() 方法返回被选元素的所有跟随的同胞元素
+            $(".but7").click(function () {
+                var text = "";
+                // 可以通过传递参数，直接过滤子元素
+                // text = "元素的子元素是" + $("li").children().text();
+                text = "元素的子元素是" + $(".li1").nextAll().text();
+                $(".res2").html(text);
+            });
+
+            // prev()和prevAll()是往前找同胞元素
+            $(".but8").click(function () {
+                var text = "";
+                // 可以通过传递参数，直接过滤子元素
+                // text = "元素的子元素是" + $("li").children().text();
+                text = "元素的子元素是" + $(".li1").prev().text();
+                $(".res2").html(text);
+            });
+        });
+    </script>
+</head>
+<body>
+<div class="buts">
+    <input type="button" value="找到父元素" class="but1">
+    <input type="button" value="找到Parents" class="but2">
+    <input type="button" value="找到children" class="but3">
+    <input type="button" value="使用find查找" class="but4">
+    <br>
+    <input type="button" value="使用siblings找到同胞元素" class="but5">
+    <input type="button" value="使用next找到下一个同胞元素" class="but6">
+    <input type="button" value="使用nextAll找到所有跟随的同胞元素" class="but7">
+    <input type="button" value="使用prev找到前面的同胞元素" class="but8">
+</div>
+<div>这是div标签
+    <ul>这是ul标签
+        <li class="li1">这是li1标签
+            <span>这是span标签</span>
+        </li>
+        <li class="li2">这是li2标签
+            <p>这是p标签</p>
+        </li>
+    </ul>
+</div>
+<div class="res1">
+</div>
+<div class="res2">
+</div>
+</body>
+</html>
