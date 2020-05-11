@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性值的设置和获取</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 设置input输入框name属性值为输入框
+            $(".but1").click(function () {
+                $(".biaoti").attr("name", "输入框");
+            });
+
+            // 获取选中按钮的状态属性，只能使用prop
+            $(".but2").click(function () {
+                var prop = $(".input1").prop("checked");
+                alert(prop);
+            });
+
+            // 因为class属性经常被使用到，所以出现了addclass,removeClass等操作
+            $(".but3").click(function () {
+                $("h3").removeClass();
+                $("p").addClass("pp1");
+            });
+
+        })
+    </script>
+</head>
+<body>
+<div class="buttons">
+    <!--设置和获取标签固有属性，建议使用prop，如果是自己添加的，建议使用attr-->
+    <input type="button" class="but1" value="设置属性值">
+    <input type="button" class="but2" value="获取选中状态">
+    <input type="button" class="but3" value="class属性操作">
+
+</div>
+
+<div>
+    <input type="checkbox" value="篮球" class="input1">篮球
+    <input type="checkbox" value="足球">足球
+    <h3 class="biaoti">我是H3标签</h3>
+    <p><a href="www.baidu.com">百度首页</a></p>
+</div>
+
+<div class="res">
+
+</div>
+</body>
+</html>
