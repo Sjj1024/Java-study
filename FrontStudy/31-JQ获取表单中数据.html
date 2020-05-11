@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单过滤选择器</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // <input type="button" class="but1" value="修改可用输入框内容为aaa">
+            $(".but1").click(function () {
+                // $("input[type=text][disabled!=disabled]").attr("value", "aaa");
+                $("input[type=text]:enabled").attr("value", "aaa");
+            });
+            // <input type="button" class="but1" value="修改不可用输入框内容为bbb">
+            $(".but2").click(function () {
+                $("input[type=text]:disabled").attr("value", "bbb");
+            });
+            // <input type="button" class="but1" value="查找复选框选中的个数">
+            $(".but3").click(function () {
+                var length = $("input[type=checkbox]:checked").length;
+                var text = "获取到的多选框选中数目是" + length;
+                $(".res").html(text);
+            });
+            // <input type="button" class="but1" value="查找单选框选中的内容">
+            $(".but4").click(function () {
+                var length = $("input[type=radio]:checked").attr("value");
+                var text = "单选框选中的是" + length;
+                $(".res").html(text);
+            });
+            // <input type="button" class="but5" value="查找下拉列表选中的内容">
+            $(".but5").click(function () {
+                var length = $("select > option:selected").attr("value");
+                var text = "下拉列表选中的是" + length;
+                $(".res").html(text);
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="buts">
+    <input type="button" class="but1" value="修改可用输入框内容为aaa">
+    <input type="button" class="but2" value="修改不可用输入框内容为bbb">
+    <input type="button" class="but3" value="查找复选框选中的个数">
+    <input type="button" class="but4" value="查找单选框选中的内容">
+    <input type="button" class="but5" value="查找下拉列表选中的内容">
+</div>
+<br>
+<div class="main">
+    <form action="">
+        <input type="text" disabled="disabled" value="不可修改一">
+        <input type="text" value="可用输入框一">
+        <input type="text" disabled="disabled" value="不可修改二">
+        <input type="text" value="可用输入框二">
+        <br>
+        <br>
+        <input type="checkbox" value="篮球" name="lanqiu">篮球
+        <input type="checkbox" value="足球" name="zuqiu">足球
+        <input type="checkbox" value="排球" name="paiqiu">排球
+        <input type="checkbox" value="羽毛球" name="yumao">羽毛球
+        <br>
+        <br>
+        <input type="radio" name="性别" value="男" checked="checked"> 男
+        <input type="radio" name="性别" value="女"> 女
+        <br>
+        <br>
+        年龄：
+        <select name="年龄" id="age">
+            <option value="1990">1990</option>
+            <option value="1991">1991</option>
+            <option value="1992">1992</option>
+            <option value="1993">1993</option>
+            <option value="1994">1994</option>
+            <option value="1995">1995</option>
+            <option value="1996">1996</option>
+        </select>
+    </form>
+</div>
+<div class="res">
+
+</div>
+</body>
+</html>
