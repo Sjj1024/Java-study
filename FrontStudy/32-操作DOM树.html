@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM内容操作</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 获取value值和设置value值
+            $(".but1").click(function () {
+                var val = $("input").val();
+                var text = "获取到的value值是：" + val;
+                $(".res").html(text);
+            });
+            // 设置class值
+            $(".but2").click(function () {
+                $("input").addClass("checked");
+            });
+            // 获取和设置标签体内容
+            $(".but3").click(function () {
+                var html = $("p").html();
+                var text = "获取到的标签体是：" + html;
+                $(".res").html(text);
+            });
+            // 获取和设置标签体文本内容
+            $(".but4").click(function () {
+                var html = $("p").text();
+                var text = "获取到的标签文本内容是：" + html;
+                $(".res").html(text);
+            });
+        })
+    </script>
+</head>
+<body>
+
+<div class="buttons">
+    <input type="button" value="获取和设置value值" class="but1">
+    <input type="button" value="获取和设置class值" class="but2">
+    <input type="button" value="获取和设置标签体内容" class="but3">
+    <input type="button" value="获取和设置标签文本内容" class="but4">
+</div>
+
+<div>
+    <input type="text" value="文本输入框" class="input1">
+    <br>
+    <p><a href="www.baidu.com" class="a1">百度首页</a></p>
+</div>
+
+<div class="res">
+
+</div>
+</body>
+</html>
