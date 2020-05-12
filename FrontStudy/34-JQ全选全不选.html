@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全选中和全不选中状态</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        function selectAll(item) {
+            var prop = $(item).prop("checked");
+            if (prop) {
+                $("input").prop("checked", "true");
+            } else {
+                $("input").prop("checked", "");
+            }
+        }
+    </script>
+</head>
+<body>
+<div align="center">
+    <table>
+        <tr>
+            <th><input type="checkbox" class="box1" onclick="selectAll(this)"></th>
+            <th>编号</th>
+            <th>姓名</th>
+            <th>年龄</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <th>1</th>
+            <th>王思聪</th>
+            <th>15</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <th>1</th>
+            <th>王思聪</th>
+            <th>15</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <th>1</th>
+            <th>王思聪</th>
+            <th>15</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <th>1</th>
+            <th>王思聪</th>
+            <th>15</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <th>1</th>
+            <th>王思聪</th>
+            <th>15</th>
+        </tr>
+        <tr>
+            <td><input type="checkbox"></td>
+            <th>1</th>
+            <th>王思聪</th>
+            <th>15</th>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
