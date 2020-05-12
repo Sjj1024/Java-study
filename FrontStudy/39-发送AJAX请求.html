@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AJAX实现</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".but1").click(function () {
+                // jq版本的ajax请求格式如下
+                $.ajax({
+                    url:"servletajax",
+                    type:"POST",
+                    date:{"name":"song"},
+                    // success是返回成功后，跟的回调函数
+                    success:function (data) {
+                        $(".res").html(data);
+                    },
+                    // 失败后的回调函数:
+                    error:function (date) {
+                        $(".res").html(date);
+                    }
+                });
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="buts">
+    <input type="button" class="but1" value="发送AJAX请求">
+    <input type="text">
+</div>
+<hr>
+<div class="res">
+
+</div>
+</body>
+</html>
