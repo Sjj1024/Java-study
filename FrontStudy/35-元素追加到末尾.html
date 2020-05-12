@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>追加内容到另一个末尾</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 为所有的p标签添加点击事件
+            $("span").click(function () {
+                // 点击之后，将this追加到末尾，因为this是js对象，需要先将转换为jq对象，然后使用对象克隆方法，
+                // 如果不使用克隆方法，就会将元素剪切到后面末尾
+                $(".res").append($(this).clone());
+            });
+        })
+    </script>
+</head>
+<body>
+<div>
+    <span>百度</span>
+    <span>搜狐</span>
+    <span>新浪</span>
+    <span>淘宝</span>
+    <span>京东</span>
+    <span>腾讯</span>
+</div>
+<div class="res">
+    您的选中内容是：<p class="p1"><a href="www.baidu.com">QQ</a></p>
+</div>
+</body>
+</html>
