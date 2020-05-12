@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FOR循环的使用</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            // 先使用js的for循环遍历元素
+            // var lis = $("li");
+            // alert(lis.length);
+            // for (var i = 0; i < lis.length; i++) {
+            //     alert(i);
+            // }
+
+            // 使用jq的for
+            var lis = $("li");
+
+            // each遍历里面传入一个回调函数，有两个参数，一个是索引，一个是js元素
+            lis.each(function (index, element) {
+                // $(".res").append(index + ":" + element.html());
+
+                // 因为获取到的是js对象，需要转成jq对象
+                $(".res").append(index + ":" + $(element).html());
+            })
+
+        })
+    </script>
+</head>
+<body>
+<ul>
+    <li>北京</li>
+    <li>上海</li>
+    <li>天津</li>
+    <li>深圳</li>
+</ul>
+
+<div class="res">
+
+</div>
+</body>
+</html>
