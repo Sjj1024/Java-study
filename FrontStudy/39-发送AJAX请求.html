@@ -22,12 +22,24 @@
                     }
                 });
             });
+            
+            // 参数分别是url，data，回调函数
+            $(".but2").get("servletajax", "name=song", function (data) {
+                alert("回调函数执行成功！");
+            });
+
+
+            $(".but3").post("servletajax", "name=song", function (data) {
+                alert("回调函数执行成功！");
+            });
         })
     </script>
 </head>
 <body>
 <div class="buts">
     <input type="button" class="but1" value="发送AJAX请求">
+    <input type="button" class="but2" value="发送GET请求">
+    <input type="button" class="but3" value="发送POST请求">
     <input type="text">
 </div>
 <hr>
