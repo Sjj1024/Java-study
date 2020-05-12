@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>随机抽奖系统</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            var timer;
+            $(".but1").click(function () {
+                var i = 1;
+                timer = setInterval(function () {
+                    if (i > 8) {
+                        i = 1;
+                    }
+                    var imgname = "img/" + i + ".png";
+                    $(".imgs img").prop("src", imgname);
+                    i++;
+                }, 200);
+            });
+
+            $(".but2").click(function () {
+                clearInterval(timer);
+                var res_img = $(".imgs img").prop("src");
+                var img_html = "<img src=\"" + res_img + "\" alt=\"抽奖结果\">";
+                $(".res").html(img_html);
+            });
+        })
+    </script>
+</head>
+<body>
+
+<div class="imgs">
+    <img src="img/1.png" alt="奖池">
+</div>
+
+<div>
+    <input  class="but1" type="button" value="开始抽奖">
+    <input  class="but2" type="button" value="抽取结果">
+</div>
+<hr>
+<div class="res">
+
+</div>
+</body>
+</html>
