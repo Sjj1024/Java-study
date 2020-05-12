@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON对象数据获取</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            var persons = {
+                "name": [
+                    "wang", "song", "wu"
+                ]
+            };
+            // 第一种获取json数据的格式
+            var one = persons.name[2];
+            $(".res").html(one);
+
+            // 第二种获取json数据的方法
+            var two = persons["name"][1];
+            $(".res").append(two);
+        })
+    </script>
+</head>
+<body>
+<div class="res">
+
+</div>
+</body>
+</html>
