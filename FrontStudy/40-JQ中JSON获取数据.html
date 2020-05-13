@@ -9,7 +9,8 @@
             var persons = {
                 "name": [
                     "wang", "song", "wu"
-                ]
+                ],
+                "age":[12, 23, 55]
             };
             // 第一种获取json数据的格式
             var one = persons.name[2];
@@ -18,6 +19,11 @@
             // 第二种获取json数据的方法
             var two = persons["name"][1];
             $(".res").append(two);
+
+            // 遍历json对象的方法
+            for (var key in persons){
+                alert(key + ":" + persons[key]);
+            }
         })
     </script>
 </head>
