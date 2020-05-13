@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>追加到元素结尾或开头</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script>
+        $(function () {
+            $(".but1").click(function () {
+                $("<p>我是新增的P元素</p>").appendTo(".res");
+            });
+
+            $(".but2").click(function () {
+                // 追加的元素必须是HTML标签元素，否则没有效果
+                // $("<p>我是新增的P元素</p>").prependTo(".res");
+                $("新增不是标签").prependTo(".res");
+            });
+        })
+    </script>
+</head>
+<body>
+<div class="buts">
+    <input type="button" class="but1" value="appendTo按钮">
+    <input type="button" class="but2" value="prependTo按钮">
+</div>
+<div class="res">
+    <p>我是一个P元素</p>
+</div>
+</body>
+</html>
