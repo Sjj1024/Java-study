@@ -39,6 +39,9 @@
         </tr>
     </table>
 
+    <!--v-bind指令：将html元素的属性和model中的数据绑定，因为html中的属性不能使用双大括号-->
+    <hr>
+
 </div>
 </body>
 <!--需要先引入vue库-->
@@ -54,16 +57,20 @@
     var vm = new Vue({
         el: ".app",
         data:{
+            // 用于测试v-if和v-show
             yes:true,
             no:false,
             age:46,
             name:"keeper",
+            /*用于v-for遍历元素*/
             numbers:[
                 {type:"苹果", price:22},
                 {type:"橘子", price:23},
                 {type:"甘蔗", price:24},
                 {type:"樱桃", price:25}
-            ]
+            ],
+            /*用于测试v-bind指令绑定html元素属性*/
+            classs:"center test"
         }
     })
 </script>
