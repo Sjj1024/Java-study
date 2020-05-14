@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定v-on</title>
+</head>
+<body>
+<div class="app">
+    <div>{{msg}}</div>
+    <br>
+    <div>
+        <!--第一种绑定格式：v-on:click="函数"-->
+        <button v-on:click="msg++">点击增加</button>
+
+        <!--第二种简写方式：@click="函数"-->
+        <button @click="msg--">点击减小</button>
+
+        <hr>
+        <!--第三种方式，调用vue中的函数-->
+        <button @click="addnum">点击增加2</button>
+        <!--第三种方式，调用vue中的函数，带上括号调用-->
+        <button @click="addnum()">点击增加3</button>
+
+        <hr>
+        <!--第三种方式，调用vue中的函数-->
+        <button @click="delen">点击增加4</button>
+        <!--第三种方式，调用vue中的函数，带上括号调用-->
+        <button @click="delen()">点击增加5</button>
+    </div>
+
+</div>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            msg: 0
+        },
+        // vue中的函数全都定义在methods中，
+        methods:{
+            addnum:function () {
+                console.log("addnum函数被执行了");
+                this.msg++;
+            },
+            delen:function () {
+                console.log("delen函数被执行了");
+                this.msg--;
+            }
+        }
+    });
+</script>
+</body>
+</html>
