@@ -10,7 +10,9 @@
     <h3>使用v-if指令渲染元素：</h3>
     <h3 v-if="yes">YES!</h3>
     <h3 v-if="no">FALSE!</h3>
+    <!--{{这种是插值表达式，在vue中，可以进行简单的数据运算等操作}}-->
     <h3 v-if="age > 35">Age:{{age}}</h3>
+    <h3 v-if="age > 35">Age:{{"年龄是" + age + 25 }}</h3>
     <h3 v-if="name.indexOf('k') > 0">NAME:{{name}}</h3>
 
     <!--使用vue的show方法,和if不同的是，show始终会将元素渲染到html中，只是display设为了none，元素就不显示了-->
@@ -41,7 +43,7 @@
 
     <!--v-bind指令：将html元素的属性和model中的数据绑定，因为html中的属性不能使用双大括号-->
     <hr>
-
+    <a href="www.baidu.com" v-bind:class="testclass">跳转百度</a>
 </div>
 </body>
 <!--需要先引入vue库-->
@@ -55,7 +57,9 @@
     * viewModel：用于连接view和model，相当于mvc中的control
     * */
     var vm = new Vue({
+        /*元素的挂在位置*/
         el: ".app",
+        /*模型数据*/
         data:{
             // 用于测试v-if和v-show
             yes:true,
@@ -70,7 +74,7 @@
                 {type:"樱桃", price:25}
             ],
             /*用于测试v-bind指令给html元素绑定属性*/
-            classs:"center test"
+            testclass:"center test"
         }
     })
 </script>
