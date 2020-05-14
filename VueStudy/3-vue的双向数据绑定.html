@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>双向数据绑定的理解</title>
+</head>
+<body>
+VUE中的双向数据绑定：
+第一个方向：vue中的数据绑定到页面上，可以在页面上展示出来
+第二个方向：页面上的数据绑定到vue数据，可以改变vue中的元素
+<div class="test">
+    <div>
+        <!--v-model意思就是双向绑定数据，msg绑定到页面上，页面上数据变化，msg也会跟着变化-->
+        <input type="text" v-model="msg">
+        <br>
+        <div>{{msg}}</div>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el:".test",
+        data:{
+            msg: "你好，世界"
+        }
+    });
+</script>
+</html>
