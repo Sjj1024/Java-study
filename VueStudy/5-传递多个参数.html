@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件机制中传递参数</title>
+</head>
+<body>
+<div class="app">
+    <div>
+        <p>{{msg}}</p>
+    </div>
+    <div>
+        <!--通过传递函数名的方式，默认会将事件对象传递过去-->
+        <button @click="addnum">点击绑定</button>
+
+        <br>
+        <!--通过传递函数方法的方式，可以传递多个参数，但是事件对象需要放在最后传递到函数中-->
+        <button @click="delen(11, 33, $event)">函数带括号传参数</button>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            msg:111
+        },
+        methods:{
+            addnum:function (event) {
+                /*event表示的就是事件对象，event.target表示的是标签对象，event.target.innerHTML表示的就是标签体内容*/
+                // console.log(event.target);
+                console.log(event.target.innerHTML);
+                this.msg++;
+            },
+            delen:function (a, b, event) {
+                /*通过传递多个参数的方式*/
+                console.log(a, b, event.target);
+                this.msg--;
+            }
+        }
+    });
+</script>
+</html>
