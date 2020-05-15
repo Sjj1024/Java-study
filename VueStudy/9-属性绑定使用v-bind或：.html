@@ -11,7 +11,14 @@
     <!--简写方式是：:href=""-->
     <a :href="url">简写跳转</a>
     <br>
+    <!--也可以绑定class，src等属性-->
+    <div :class="class1">
+        <img :src="src1" alt="Vue图标">
+    </div>
     <button @click="change">切换</button>
+    <br>
+    <li v-for="(item,key) in numlist" v-text="item">{{key}} {{item}}</li>
+    <!--<li v-for="(item,key) in numlist" v-text="key" v-text="item"></li>-->
 </div>
 </body>
 <script src="js/vue.js"></script>
@@ -19,7 +26,10 @@
     var vm = new Vue({
         el: ".app",
         data:{
-            url: "http://baidu.com"
+            url: "http://baidu.com",
+            class1: "d1",
+            src1: "imgs/vuelogo.png",
+            numlist:["姓名", "年龄", "班级", "学校"]
         },
         methods:{
             change:function () {
