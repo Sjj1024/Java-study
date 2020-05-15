@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>css类属性控制和调用</title>
+    <style>
+        .active{
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
+        }
+        .error{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <!--控制class属性的话，可以通过绑定class值实现，并且可以有多个，中间通过逗号隔开，前面是类：属性，属性就是vue中的bool类型的值，
+    如果值为真，则此元素包含这个类，如果值为假，则次元素不包含这个类，此方法适用于可以来回切换样式的操作
+    -->
+    <div :class="{active:isActive, error:isError}">
+        网页内容
+    </div>
+    <button @click="csstoggle">切换事件</button>
+
+    <!--还可以通过列表的方式给元素赋值属性，这种方式适合给元素赋值多个类属性的情况-->
+    <hr>
+    <div :class="[classActive, classError]">
+        文章内容样式
+    </div>
+    <button @click="csstoggle2">切换事件</button>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            isActive: true,
+            isError: true,
+            classActive: "active",
+            classError: "error"
+        },
+        methods:{
+            csstoggle:function () {
+                /*将此值切换为相反的值，相当于切换*/
+                this.isActive = !this.isActive;
+                this.isError = !this.isError;
+            },
+            csstoggle2:function () {
+                /*将此值切换为相反的值，相当于切换*/
+                this.classActive = "";
+                this.classError = "";
+            }
+        }
+    });
+</script>
+</html>
