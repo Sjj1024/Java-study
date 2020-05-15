@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件修饰符阻止事件冒泡和默认行为</title>
+</head>
+<body>
+<div class="app">
+    <div v-text="msg"></div>
+    <br>
+    <!--事件冒泡的话，点击下面的按钮，则hedal2也会执行-->
+    <div @click="hedal2">
+        <!--事件冒泡的内在函数-->
+        <!--为了阻止这种冒泡事件，需要跟上事件修饰符：stop，那么就只会执行自身函数，而不会进行冒泡-->
+        <button @click.stop="hedal1">点击事件</button>
+    </div>
+    <br>
+    下面测试阻止默认事件的修饰符：prevent,给a标签增加阻止事件，就不会进行跳转了
+    <br>
+    <a href="www.baiud.com" @click.prevent="hedal3">跳转到百度</a>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            msg:111
+        },
+        methods:{
+            hedal1:function () {
+                console.log("hedal1函数被执行了");
+            },
+            hedal2:function () {
+                console.log("hedal2别执行了");
+                this.msg++;
+            },
+            hedal3:function () {
+                console.log("事件3执行了");
+            }
+        }
+    });
+</script>
+</html>
