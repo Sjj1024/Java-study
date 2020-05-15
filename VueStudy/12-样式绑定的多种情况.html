@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>样式绑定的多种形式</title>
+    <style>
+        .active{
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .error{
+            background: pink;
+        }
+        .fontcolor{
+            color: blue;
+        }
+        .fontsize{
+            font-size: 30px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="app">
+    <!--对象和数组可以组合放置在类列表中-->
+    <div :class="[classcolor, classsize, {active:isActive, error:isError}]">
+        页面内容
+    </div>
+    <br>
+    <button @click="toggleclass">点击切换</button>
+
+    <!--可以将所有的样式都放到vue的一个属性列表中，然后将这个列表绑定到这个元素上-->
+    <hr>
+    <div :class="classlists">
+        二级页面内容
+    </div>
+    <button @click="togleclass2">点击切换</button>
+
+    <!--可以将所有的样式都放到vue对象的属性对象中，然后空过控制对象的属性控制样式-->
+    <hr>
+    <div :class="classobj">
+        二级页面内容
+    </div>
+    <button @click="togleclass3">点击切换</button>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            isActive:true,
+            isError:true,
+            classcolor:"fontcolor",
+            classsize:"fontsize",
+            classlists:["active", "error"],
+            classobj:{
+                active:true,
+                error:true
+            }
+        },
+        methods:{
+            toggleclass:function () {
+                this.isActive = !this.isActive;
+            },
+            togleclass2:function () {
+                console.log("执行方法2");
+                this.classlists.pop(0);
+            },
+            togleclass3:function () {
+                console.log("执行方法3");
+                this.classobj.active = false;
+            }
+        }
+    });
+</script>
+</html>
