@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IF和show等分支语句使用</title>
+</head>
+<body>
+<div class="app">
+    <p v-text="score"></p>
+    <li v-if="score>90">优秀</li>
+    <li v-else-if="score>70&&score<90">良好</li>
+    <li v-else-if="score>60&&score<70">及格</li>
+    <li v-else="score<60">不及格</li>
+    <!--if和show的不同之处是v-if不会将元素显示在页面上，而v-show会将元素显示在页面上，是通过控制style属性将元素隐藏起来的-->
+    <br>
+    <button @click="delsocre">点击减小元素</button>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            score: 99
+        },
+        methods:{
+            delsocre:function () {
+                this.score--;
+            }
+        }
+    });
+</script>
+</html>
