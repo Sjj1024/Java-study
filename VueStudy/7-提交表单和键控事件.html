@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>按键修饰符来触发相应的动作</title>
+</head>
+<body>
+<div class="app">
+    用户名：<input type="text" v-model="uname">
+    <br>
+    <!--使用v-model绑定password，并且使用keyup.enter绑定检控事件，摁下enter键就会触发后面的函数-->
+    密码：<input type="text" v-model="password" @keyup.enter="submitContent">
+    <br>
+    <button @click="submitContent">注册登录</button>
+    &nbsp;
+    <button @click="clearnContent">清空重置</button>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            uname:"",
+            password: ""
+        },
+        methods:{
+            clearnContent: function () {
+                this.uname = "";
+                this.password = "";
+            },
+            submitContent:function () {
+                console.log("提交数据到服务端");
+                console.log(this.uname, this.password);
+            }
+        }
+    });
+</script>
+</html>
