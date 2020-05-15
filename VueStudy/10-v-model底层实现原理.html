@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V-model底层实现原理其实就是属性和事件结合实现的</title>
+</head>
+<body>
+<div class="app">
+    <p>{{msg}}</p>
+    <!--input标签有一个input事件，当输入框内容发送变化的时候，就会触发这个事件-->
+    <input type="text" :value="msg" @input="handler">
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            msg: "你好"
+        },
+        methods:{
+            handler:function (event) {
+                this.msg = event.target.value;
+            }
+        }
+    });
+</script>
+</html>
