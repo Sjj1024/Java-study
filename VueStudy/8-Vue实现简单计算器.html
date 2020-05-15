@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue实现简单的计算器</title>
+</head>
+<body>
+<div class="app">
+    数值A：<input type="text" v-model="numa">
+    <br>
+    数值B：<input type="text" v-model="numb">
+    <br>
+    <button @click="addmethod">加法计算</button>
+    <button @click="delmethod">减法计算</button>
+    <button @click="chengmethod">乘法计算</button>
+    <button @click="chumethod">除法计算</button>
+    <br>
+    计算结果是：
+    <div v-text="result"></div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            numa: "",
+            numb: "",
+            result: ""
+        },
+        methods:{
+            addmethod:function () {
+                console.log("进行加法计算");
+                var numa = parseInt(this.numa);
+                var numb = parseInt(this.numb);
+                console.log(numa, numb);
+                this.result = numa + numb;
+                console.log(this.result);
+            },
+            delmethod:function () {
+                console.log("进行减法计算");
+                this.result = parseInt(this.numa) - parseInt(this.numb);
+            },
+            chengmethod:function () {
+                console.log("进行乘法计算");
+                this.result = parseInt(this.numa) * parseInt(this.numb);
+            },
+            chumethod:function () {
+                console.log("进行除法计算");
+                this.result = parseInt(this.numa) / parseInt(this.numb);
+            }
+        }
+    });
+</script>
+</html>
