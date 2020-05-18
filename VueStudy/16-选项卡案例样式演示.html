@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue选项卡案例</title>
+    <style>
+        .active{
+            background-color: yellow;
+        }
+        li{
+            width: 60px;
+            height: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="app">
+    <div class="tab-pane">
+        <ul>
+            <!--通过遍历所有水果，再进行判断当前类索引是否相等进而添加样式-->
+            <li v-for="(item, index) in fruilt_obj" :class="currentid==index?'active':''" @click="changetab(index)">{{item.name}}</li>
+        </ul>
+    </div>
+    <div class="content-img">
+        <li v-for="item in fruilt_obj">{{item.imgsrc}}</li>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            fruilt_obj:[
+                {id: 1, name:"苹果", imgsrc:"imgs/pingguo.png"},
+                {id: 2, name:"香蕉", imgsrc:"imgs/xiangjiao.png"},
+                {id: 3, name:"橘子", imgsrc:"imgs/juzi.png"}
+            ],
+            /* 通过索引来控制选项卡索引切换，后面根据这个索引判断是否和当前选项索引相一致，一致的话，就赋值active类*/
+            currentid:0
+        },
+        methods:{
+            changetab:function (index) {
+                this.currentid = index;
+            }
+        }
+    });
+</script>
+</html>
