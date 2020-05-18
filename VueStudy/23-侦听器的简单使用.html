@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侦听器的简单使用</title>
+</head>
+<body>
+<div class="app">
+    <input type="text" v-model="firstname">
+    <br>
+    <input type="text" v-model="lastname">
+    <p v-text="allname"></p>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            firstname: "song",
+            lastname: "jiang",
+            allname: "song jiang"
+        },
+        /*侦听器就是监听数据变化的，当数据发生变化，就会执行对应的逻辑*/
+        watch:{
+            /*键名是数据名，值是具体执行的函数*/
+            firstname:function (val) {
+                /*当数据发生变化后，传递过来的参数是变化后的数据*/
+                console.log("firstname发生了变化");
+                this.allname = val + " " + this.lastname;
+            },
+            lastname:function (val) {
+                console.log("lastname发生了变化");
+                this.allname = this.firstname + " " + val;
+            }
+        }
+    });
+</script>
+</html>
