@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自己实现的跑马灯效果</title>
+</head>
+<body>
+<div class="app">
+    <button @click="startGun">滚动起来</button>
+    <br>
+    <button @click="stopGun">停止滚动</button>
+    <br>
+    <p>{{message}}</p>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            message: "猥琐发育，别浪啊，我的大兄弟",
+            intervalId: null
+        },
+        methods:{
+            startGun:function () {
+                /*解决定时器内部访问消息时问题*/
+                var self = this;
+                /*开始滚动消息，需要通过定时器设置*/
+                clearInterval(this.intervalId);
+                /*开始之前先清除之前的定时器，放置出现重复*/
+                this.intervalId = setInterval(function () {
+                    //截取第一个字符串
+                    var start = self.message.substring(0,1);
+                    //截取剩下的字符串
+                    var end = self.message.substring(1);
+                    /*VUE会监听自己的data数据，只要数据变化，就会重新加载DOM*/
+                    self.message = end + start;
+                }, 400);
+
+            },
+            stopGun: function () {
+                /*停止滚动消息*/
+                clearInterval(this.intervalId);
+            }
+        }
+    });
+</script>
+</html>
