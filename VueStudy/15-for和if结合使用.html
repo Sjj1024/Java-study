@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>V-for和if结合使用</title>
+</head>
+<body>
+<div class="app">
+    <!--遍历对象元素后，可以将对象的键值对和索引都遍历出来-->
+    <li v-for="(value, key, index) in objs">{{value + ">>>" + key + ">>>" + index}}</li>
+
+    <!--使用if可以对遍历出来的元素进行过滤,只有值是18的元素才会遍历出来-->
+    <hr>
+    <li v-if="value==18" v-for="(value, key, index) in objs">{{value + ">>>" + key + ">>>" + index}}</li>
+    <li v-if="value=='洛阳'" v-for="(value, key, index) in objs">{{value + ">>>" + key + ">>>" + index}}</li>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            objs:{
+                name:"zhangsan",
+                age:18,
+                home:"洛阳"
+            }
+        }
+    });
+</script>
+</html>
