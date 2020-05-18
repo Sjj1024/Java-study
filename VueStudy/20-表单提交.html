@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单操作</title>
+</head>
+<body>
+<div class="app">
+    <form action="">
+        用户名：<input type="text" v-model="uname">
+        <div>
+            <span>
+                性别：
+                <!--默认会直接绑定value的值，而且是双向绑定，所以选择变，gender就变-->
+                <input type="radio" value="1" v-model="gender">男
+                <input type="radio" value="2" v-model="gender">女
+            </span>
+        </div>
+        <div>
+            <span>
+                兴趣爱好：
+                <!--兴趣爱好因为是多选框，所以需要使用数组的形式绑定元素-->
+                <input type="checkbox" value="3" v-model="aihao">篮球 &nbsp;
+                <input type="checkbox" value="4" v-model="aihao">足球 &nbsp;
+                <input type="checkbox" value="5" v-model="aihao">台球 &nbsp;
+                <input type="checkbox" value="6" v-model="aihao">羽毛球 &nbsp;
+            </span>
+        </div>
+        <div>
+            <span>
+                职业类型：
+                <select name="" id="" v-model="occupation">
+                    <option value="1">农业</option>
+                    <option value="2">网络工程师</option>
+                    <option value="3">教师</option>
+                    <option value="4">护士</option>
+                </select>
+            </span>
+        </div>
+        <div>
+            <span>
+                个人简介：
+                <textarea cols="30" rows="10" v-model="desription"></textarea>
+            </span>
+        </div>
+        <div>
+        <span>
+            <input type="submit" value="提交" @click.prevent="submitdata">
+        </span>
+        </div>
+    </form>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            uname: "王思聪",
+            gender:2,
+            /*因为爱好可以多选，所以使用数组的形式*/
+            aihao: [5],
+            occupation:[1],
+            desription: "请在这里介绍你自己"
+        },
+        methods:{
+            submitdata:function () {
+                // console.log(this.gender);
+                // console.log(this.aihao);
+                // console.log(this.occupation);
+                console.log(this.desription);
+            }
+        }
+    });
+</script>
+</html>
