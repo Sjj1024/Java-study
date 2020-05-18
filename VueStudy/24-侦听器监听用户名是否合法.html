@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>侦听器使用</title>
+</head>
+<body>
+<div class="app">
+    <!--使用绑定修饰符.lazy可以让组件失去焦点后再出发相应事件-->
+    <input type="text" v-model.lazy="uname">
+    <label for="" v-text="tips"></label>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            uname: "",
+            tips: ""
+        },
+        methods:{
+            checkName:function (name) {
+                if (name == "admin") {
+                    this.tips = "用户名已经存在";
+                }else {
+                    this.tips = "用户名可以使用";
+                }
+            }
+        },
+        watch:{
+            uname:function (val) {
+                /*定义that是为了让监听器中可以使用*/
+                var that = this;
+                var name = val;
+                this.tips = "正在检查用户名...";
+                setTimeout(function () {
+                    that.checkName(name);
+                }, 2000);
+            }
+        }
+    });
+</script>
+</html>
