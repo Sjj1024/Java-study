@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue中数组的那些方法</title>
+</head>
+<body>
+<div class="app">
+    <input type="text" v-model="fruits">
+    <button @click="add">增加</button>
+    <button @click="del">删除</button>
+    <button @click="sli">截取</button>
+    <br>
+    <li v-for="item in fruits_list">{{item}}</li>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            fruits: "",
+            fruits_list:["苹果","香蕉","橘子"]
+        },
+        methods:{
+            add:function () {
+                // vue中的数组方法是变异方法，是动态的，数据变，页面就变，除了filter，concent，slice这三个
+                this.fruits_list.push(this.fruits);
+            },
+            del:function () {
+                // 删除方法是pop
+                this.fruits_list.pop();
+            },
+            sli:function () {
+                // 此方法不会改变原数组内容，会生成一个新数组，所以，如果想使用，就将其付值给原数组
+                this.fruits_list = this.fruits_list.slice(0,1);
+            }
+        }
+    });
+</script>
+</html>
