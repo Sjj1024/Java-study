@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vue中的循环结构遍历元素</title>
+</head>
+<body>
+<div class="app">
+    <!--使用for循环遍历元素-->
+    <li v-for="item in frutis">{{ item }}</li>
+    <!--使用带索引的for遍历元素-->
+    <hr>
+    <li v-for="(item, index) in frutis" :key="index">{{ index + "----------" + item}}</li>
+
+    <!--使用复杂的元素进行元素遍历-->
+    <li v-for="one in itemdict">{{one.ename + "----" + one.cname}}</li>
+
+    <!--使用kay属性可以提高vue的加载性能，一般使用for的时候，尽量使用kay-->
+    <hr>
+    <li :key="index" v-for="(item, index) in tiemdict">{{one.ename + ">>>>-" + one.cname}}</li>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data: {
+            frutis: ["苹果", "香蕉", "橘子", "橙子"],
+            itemdict: [
+                {
+                    ename: "apple",
+                    cname: "苹果"
+                },
+                {
+                    ename: "branner",
+                    cname: "香蕉"
+                },                {
+                    ename: "origin",
+                    cname: "橙子"
+                }]
+        }
+    });
+</script>
+</html>
