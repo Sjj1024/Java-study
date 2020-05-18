@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单域修饰符的简单实用</title>
+</head>
+<body>
+<div class="app">
+    <div>
+        <!--加上.number后，会将数据直接转成int类型-->
+        <input type="text" v-model.number="age">
+        <p>{{age}}</p>
+        <button @click="calcute">开始计算</button>
+        <span>
+            <!--trim是去掉开头和结尾空格的修饰符-->
+            <input type="text" v-model.trim="desc">
+        </span>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            age: 18,
+            desc:""
+        },
+        methods:{
+            calcute:function () {
+                console.log(this.age);
+                /*默认从表单获取到的是str类型数据*/
+                this.age = this.age + 10;
+                //将获取到的数据去两边空格
+                console.log(this.desc);
+                console.log(this.desc.length);
+            }
+        }
+    });
+</script>
+</html>
