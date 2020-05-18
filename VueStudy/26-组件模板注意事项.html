@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件的基本使用</title>
+</head>
+<body>
+<div class="app">
+<!--    使用组件的话，写上组件的名称标签,组件也可以重复使用，并且里面的数据是独立的-->
+    <button-com></button-com>
+    <button-com></button-com>
+    <button-com></button-com>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    /*
+    * 使用组件化开发需要注意的事项：
+    * 1，组件的data数据必须是一个函数，并且返回一个对象，这样会为每一个组件创建一个闭包环境，保证数据属于自己
+    * 2，组件模板内容必须是单个根元素，也就是template中必须是以一个根元素包括起来的模板字符串，否则报错
+    * 3。模板字符串也可以使用模板字符串表示：反引号包括的内容
+    *
+    * */
+
+
+// <!--    组件的定义:Vue.component(组件名,对象)-->
+//     Vue.component("button-com", {
+//         // 组件的数据，后面是一个函数
+//         data: function () {
+//             return {
+//                 content: 0
+//             }
+//         },
+//         // 模板，实际上是一个字符串，里面可以写vue的基础语法，if，for等
+//         template: '<button @click="content++">点击{{content}}次</button>'
+//     });
+
+
+    Vue.component("button-com", {
+        // 组件的数据，后面是一个函数
+        data: function () {
+            return {
+                content: 0
+            }
+        },
+        // 模板，实际上是一个字符串，里面可以写vue的基础语法，if，for等
+        template: `
+        <button @click="content++">点击{{content}}次</button>
+        `
+    });
+
+    var vm = new Vue({
+        el: ".app",
+    });
+</script>
+</html>
