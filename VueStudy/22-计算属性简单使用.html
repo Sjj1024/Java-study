@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>计算属性的简单实用</title>
+</head>
+<body>
+<!--类似于方法，作用是简化模板中的数据计算-->
+<div class="app">
+    <div>
+        原始数据：
+        {{msg}}
+    </div>
+    <div>
+        <!--直接写计算属性方法名称，不用带括号-->
+        {{reverseStr}}
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            msg: "nihao"
+        },
+        /*计算属性就是在后面加上一个computed，后面跟上相应的方法作为计算属性，当vue加载的时候，就开始执行里面操作*/
+        computed:{
+            reverseStr:function () {
+                return this.msg.split("").reverse().join("");
+            }
+        }
+    });
+</script>
+</html>
