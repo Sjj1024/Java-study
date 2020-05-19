@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>使用组件化开发一个购物车结构</title>
+</head>
+<body>
+<div class="app">
+    <div class="shoping-car">
+        <shop-car></shop-car>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script>
+    var cartitle = {
+        /*接收父组件传递过来的数据*/
+        props: ["uname"],
+        template: `
+        <div>我是标题组件内容, 用户是：{{uname}}</div>
+        `
+    };
+    var carlist = {
+        template: `
+        <div>我是商品列表组件内容</div>
+        `
+    };
+    var cartotle = {
+        template: `
+        <div>我是结算购物车组件内容</div>
+        `
+    };
+    Vue.component("shop-car", {
+        data:function () {
+            return {
+                msg:"子组件中的数据",
+                uname:"王思聪"
+            }
+        },
+        template:`
+            <div>
+
+                <car-title :uname="uname"></car-title>
+                <car-list></car-list>
+                <car-totle></car-totle>
+            </div>
+        `,
+        // 创建三个子组件的方式，包裹标题，列表，结算组件
+        components:{
+            "car-title": cartitle,
+            "car-list": carlist,
+            "car-totle": cartotle,
+        }
+    });
+
+    var vm = new Vue({
+        el: ".app",
+        data:{
+            msg: "父组件",
+        }
+    });
+</script>
+</html>
