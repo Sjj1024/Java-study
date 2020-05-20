@@ -1,6 +1,6 @@
 <template>
     <div>
-        单文件组件组成部分
+        单文件组件组成部分由三部分组成：模板，script，style三个部分
     </div>
 </template>
 
