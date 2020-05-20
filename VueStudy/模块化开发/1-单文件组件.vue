@@ -21,5 +21,5 @@ export default {
 </script>
 
 <style scoped>
-/* 单文件组件的样式表 */
+/* 单文件组件的样式表，scoped属性可以防止多个组件键样式冲突，相当于样式属于自己这个组件私有*/
 </style>
