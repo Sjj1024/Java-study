@@ -5,7 +5,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-// 相当于控制器，MVC中的c，只有写上这个注解，框架才会识别到
+// 相当于控制器，MVC中的c，只有写上这个注解，框架才会识别到，其实底层还是servlet
 // RequestMapping可以写到类上，也可以写到方法上，写到类上，表示一级路径，
 @Controller
 @RequestMapping("/app")
@@ -16,6 +16,8 @@ public class FirstController {
     @RequestMapping(value = "/first", method = {RequestMethod.GET})
     @ResponseBody
     public String first() {
+        // 而且spring会自动将请求参数映射到方法的参数中，get请求的话，会将?后面的参数通过String 传递过来，
+        // POST请求的话，也可以通过javabean对象映射，其内部使用的就是映射
         return "first hello world";
     }
 }
