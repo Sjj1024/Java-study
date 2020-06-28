@@ -8,6 +8,7 @@ import javax.persistence.*;
 @Table(name = "tab_seller")
 public class Seller {
     // ORM对象关系映射,@Id声明此属性为主键，@GeneratedValue声明生成策略，strategy声明策略是自动增长，@Columen声明和数据库中的sid字段相对应
+    //  GenerationType.AUTO表示如果数据库没有此表，就创建，有则不动
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "sid")
