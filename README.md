@@ -32,3 +32,5 @@ Java 集合框架:https://www.runoob.com/java/java-collections.html
 
 使用Navicat生成ER关系图并导出：https://blog.csdn.net/xu1227233860/article/details/78278393
 https://blog.csdn.net/xunxue1523/article/details/104412442
+https://blog.csdn.net/qq_36025814/article/details/84137314
+https://blog.csdn.net/qq_37486501/article/details/79842653
