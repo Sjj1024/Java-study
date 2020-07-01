@@ -27,3 +27,6 @@ Java四舍五入时保留指定小数位数：https://www.cnblogs.com/yysbolg/p/
 element-ui文件上传 做类型大小的限制： https://www.cnblogs.com/yysbolg/p/11095901.html
 
 分页PageRequest、PageImpl:https://blog.csdn.net/Jae_Wang/article/details/80630776
+
+Java 集合框架:https://www.runoob.com/java/java-collections.html
+
