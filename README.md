@@ -36,3 +36,17 @@ https://blog.csdn.net/qq_36025814/article/details/84137314
 https://blog.csdn.net/qq_37486501/article/details/79842653
 
 MySQL创建数据表并建立主外键关系：https://www.cnblogs.com/Brambling/p/9263377.html
+
+创建外键时候的语句
+create table student
+(
+    sid int not null auto_increment,
+    sname varchar(10) not null,
+		sage int,
+		sgender varchar(1),
+		shome VARCHAR(255),
+		swaijian int,
+    primary key (sid),
+		foreign key (swaijian) references teacher(tid) on DELETE CASCADE on UPDATE CASCADE
+)
+engine=innodb auto_increment=1 default charset=utf8 collate=utf8_general_ci;
