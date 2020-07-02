@@ -18,3 +18,5 @@ div水平垂直居中的六种方法:https://www.cnblogs.com/a-cat/p/9019184.htm
 this.$axios axios:https://tieba.baidu.com/p/6147821840
 
 关于设置了setMaxAge(0)而浏览器未成功删除Cookie的注意事项：https://www.cnblogs.com/keyi/p/6122845.html
+
+JAVA中Cookie MaxAge属性及其使用：https://blog.csdn.net/czh500/article/details/80211408
