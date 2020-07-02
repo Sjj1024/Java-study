@@ -10,3 +10,5 @@ JPA ID生成策略:https://www.cnblogs.com/xiaohouzai/p/8989378.html
 CascadeType（各种级联操作）详解: https://www.jianshu.com/p/e8caafce5445
 
 springBoot学习笔记之application.yml配置文件：https://blog.csdn.net/qq_29884151/article/details/80447702
+
+navicat——复制数据库表:https://blog.csdn.net/whm18322394724/article/details/79339078
