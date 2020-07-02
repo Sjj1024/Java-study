@@ -14,3 +14,5 @@ springBoot学习笔记之application.yml配置文件：https://blog.csdn.net/qq_
 navicat——复制数据库表:https://blog.csdn.net/whm18322394724/article/details/79339078
 
 div水平垂直居中的六种方法:https://www.cnblogs.com/a-cat/p/9019184.html
+
+this.$axios axios:https://tieba.baidu.com/p/6147821840
