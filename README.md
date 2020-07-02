@@ -16,3 +16,5 @@ navicat——复制数据库表:https://blog.csdn.net/whm18322394724/article/det
 div水平垂直居中的六种方法:https://www.cnblogs.com/a-cat/p/9019184.html
 
 this.$axios axios:https://tieba.baidu.com/p/6147821840
+
+关于设置了setMaxAge(0)而浏览器未成功删除Cookie的注意事项：https://www.cnblogs.com/keyi/p/6122845.html
