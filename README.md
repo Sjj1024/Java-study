@@ -36,3 +36,5 @@ vue填坑系列之vue-cookies的使用：https://blog.csdn.net/xuxinwen32/articl
 https://www.cnblogs.com/wangjiachen666/p/9656383.html
 
 vue.js通过路由跳转页面的三种方式:https://blog.csdn.net/qi_dabin/article/details/82454588
+
+js和jq跳转到另一个页面或者在另一个窗口打开页面：https://www.cnblogs.com/zmdComeOn/p/12184610.html
