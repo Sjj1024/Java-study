@@ -31,3 +31,5 @@ jquery 设置cookie、删除cookie、获取cookie:https://www.cnblogs.com/hellof
 jquery is()和has()方法:https://www.cnblogs.com/duanzhenzhen/p/10204702.html
 
 vue引入JQ的方法： https://blog.csdn.net/ddwddw4/article/details/81102417
+
+vue填坑系列之vue-cookies的使用：https://blog.csdn.net/xuxinwen32/article/details/88134423
