@@ -29,3 +29,5 @@ JS之document.cookie详解以及$.cookie的使用:https://www.cnblogs.com/zouhon
 jquery 设置cookie、删除cookie、获取cookie:https://www.cnblogs.com/hellofangfang/p/9626797.html
 
 jquery is()和has()方法:https://www.cnblogs.com/duanzhenzhen/p/10204702.html
+
+vue引入JQ的方法： https://blog.csdn.net/ddwddw4/article/details/81102417
