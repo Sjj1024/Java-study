@@ -27,3 +27,5 @@ https://blog.csdn.net/weixin_42036952/article/details/88564647
 JS之document.cookie详解以及$.cookie的使用:https://www.cnblogs.com/zouhong/p/11821644.html
 
 jquery 设置cookie、删除cookie、获取cookie:https://www.cnblogs.com/hellofangfang/p/9626797.html
+
+jquery is()和has()方法:https://www.cnblogs.com/duanzhenzhen/p/10204702.html
