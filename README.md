@@ -34,3 +34,5 @@ vue引入JQ的方法： https://blog.csdn.net/ddwddw4/article/details/81102417
 
 vue填坑系列之vue-cookies的使用：https://blog.csdn.net/xuxinwen32/article/details/88134423
 https://www.cnblogs.com/wangjiachen666/p/9656383.html
+
+vue.js通过路由跳转页面的三种方式:https://blog.csdn.net/qi_dabin/article/details/82454588
