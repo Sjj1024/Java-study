@@ -38,3 +38,5 @@ https://www.cnblogs.com/wangjiachen666/p/9656383.html
 vue.js通过路由跳转页面的三种方式:https://blog.csdn.net/qi_dabin/article/details/82454588
 
 js和jq跳转到另一个页面或者在另一个窗口打开页面：https://www.cnblogs.com/zmdComeOn/p/12184610.html
+
+使用ajax方法实现form表单的提交:https://www.cnblogs.com/han-1034683568/p/7199168.html
