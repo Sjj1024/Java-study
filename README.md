@@ -21,3 +21,5 @@ Vue项目中实现用户登录及token验证:https://www.cnblogs.com/web-record/
 webpack安装和使用：https://www.cnblogs.com/jinzy/p/6496103.html
 
 Webpack安装配置及打包详细过程：https://www.cnblogs.com/aizai846/p/11497508.html
+
+配置webpack的自动打包功能：https://www.cnblogs.com/wtsx-2019/p/12757476.html
