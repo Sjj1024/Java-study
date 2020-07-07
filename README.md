@@ -16,3 +16,5 @@ Vue this.$router.push、replace、go的区别：https://www.cnblogs.com/lml-lml/
 Vue项目中实现用户登录及token验证:https://www.cnblogs.com/web-record/p/9876916.html
 
 webpack安装和使用：https://www.cnblogs.com/jinzy/p/6496103.html
+
+Webpack安装配置及打包详细过程：https://www.cnblogs.com/aizai846/p/11497508.html
