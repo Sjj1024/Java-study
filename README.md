@@ -9,6 +9,9 @@ springboot中文乱码：https://www.cnblogs.com/merryyou/p/9069577.html
 
 vue-cli 跳转方式： https://www.cnblogs.com/wanan-01/p/10131452.html
 
+vue-cli页面跳转传参数：https://www.cnblogs.com/pythonywy/p/11585641.html
+https://blog.csdn.net/weixin_42429288/article/details/84637464
+
 vue中$router 与 $route区别:https://www.cnblogs.com/csuwujing/p/9962974.html
 
 Vue this.$router.push、replace、go的区别：https://www.cnblogs.com/lml-lml/p/9890893.html
