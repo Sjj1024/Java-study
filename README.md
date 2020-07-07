@@ -6,3 +6,7 @@ Java学习笔记
 springboot secrity:https://www.cnblogs.com/demingblog/p/10874753.html#%E4%BB%8E%E4%B8%80%E4%B8%AAspring-security%E7%9A%84%E4%BE%8B%E5%AD%90%E5%BC%80%E5%A7%8B
 
 springboot中文乱码：https://www.cnblogs.com/merryyou/p/9069577.html
+
+vue-cli 跳转方式： https://www.cnblogs.com/wanan-01/p/10131452.html
+
+vue中$router 与 $route区别:https://www.cnblogs.com/csuwujing/p/9962974.html
