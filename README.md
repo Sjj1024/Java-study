@@ -19,3 +19,5 @@ npm install -S -D -g 有什么区别：https://www.jianshu.com/p/2e7f3b69e51e
 vue-cli 3 脚手架搭建（create）:https://www.jianshu.com/p/c7df292915e7
 
 Vue+ElementUI 安装与应用：https://www.cnblogs.com/BlueSkyyj/p/11506639.html
+
+在vue项目中的axios使用配置记录:https://www.cnblogs.com/mica/p/10795242.html
