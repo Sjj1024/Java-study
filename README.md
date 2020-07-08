@@ -13,3 +13,5 @@ https://blog.csdn.net/qq_37279783/article/details/88246797
 webpack配置自动打包：https://blog.csdn.net/qq_42767647/article/details/107183425
 
 关于Vue中的 render: h => h(App) 具体是什么含义？：https://blog.csdn.net/paullinjie/article/details/80938800
+
+npm install -S -D -g 有什么区别：https://www.jianshu.com/p/2e7f3b69e51e
