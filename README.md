@@ -21,3 +21,5 @@ vue-cli 3 脚手架搭建（create）:https://www.jianshu.com/p/c7df292915e7
 Vue+ElementUI 安装与应用：https://www.cnblogs.com/BlueSkyyj/p/11506639.html
 
 在vue项目中的axios使用配置记录:https://www.cnblogs.com/mica/p/10795242.html
+
+vue axios请求 配置:https://blog.csdn.net/qq_41772754/article/details/88075391
