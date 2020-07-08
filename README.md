@@ -9,3 +9,5 @@ springboot+vue实现token验证：https://www.cnblogs.com/zwq20134/p/11687820.ht
 
 SpringBoot response中文乱码:https://blog.csdn.net/shuai8624/article/details/102472298
 https://blog.csdn.net/qq_37279783/article/details/88246797
+
+webpack配置自动打包：https://blog.csdn.net/qq_42767647/article/details/107183425
