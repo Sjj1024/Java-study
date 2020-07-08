@@ -23,3 +23,5 @@ Vue+ElementUI 安装与应用：https://www.cnblogs.com/BlueSkyyj/p/11506639.htm
 在vue项目中的axios使用配置记录:https://www.cnblogs.com/mica/p/10795242.html
 
 vue axios请求 配置:https://blog.csdn.net/qq_41772754/article/details/88075391
+
+vscode实现右键文件夹选择open with code：https://blog.csdn.net/qq_37674858/article/details/100132445
