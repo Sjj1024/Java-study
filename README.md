@@ -43,3 +43,5 @@ Missing space before function parentheses.eslint(space-before-function-paren);ht
 vue-cli3的eslint配置问题:https://www.jianshu.com/p/bfc7e7329cff
 
 vue-cli3 在生产环境下禁用 eslint （非开发环境）：https://blog.csdn.net/mChales_Liu/article/details/104161677
+
+vue前端post请求之坑：https://www.cnblogs.com/51python/p/11890656.html
