@@ -35,3 +35,7 @@ Java获取当前时间及String、datetime、date相互转化：https://www.cnbl
 div水平垂直居中的六种方法：https://www.cnblogs.com/a-cat/p/9019184.html
 
 Transform（CSS动态属性的开始）:https://blog.csdn.net/weixin_45195200/article/details/95619295
+
+vue项目 报错 Extra semicolon (semi):https://blog.csdn.net/xiao_yu_liu/article/details/102520729
+
+Missing space before function parentheses.eslint(space-before-function-paren);https://blog.csdn.net/qq_34803821/article/details/85121690
