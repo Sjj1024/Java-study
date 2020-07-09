@@ -27,3 +27,5 @@ vue axios请求 配置:https://blog.csdn.net/qq_41772754/article/details/8807539
 vscode实现右键文件夹选择open with code：https://blog.csdn.net/qq_37674858/article/details/100132445
 
 vue项目出现Module not found: Error: Can't resolve 'stylus-loader'错误解决方案：https://www.cnblogs.com/wxy0126/p/10908096.html
+
+使用ping命令+时间戳 记录到文件里面：https://blog.csdn.net/tiantang_1986/article/details/84029131
