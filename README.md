@@ -29,3 +29,5 @@ vscode实现右键文件夹选择open with code：https://blog.csdn.net/qq_37674
 vue项目出现Module not found: Error: Can't resolve 'stylus-loader'错误解决方案：https://www.cnblogs.com/wxy0126/p/10908096.html
 
 使用ping命令+时间戳 记录到文件里面：https://blog.csdn.net/tiantang_1986/article/details/84029131
+
+Java获取当前时间及String、datetime、date相互转化：https://www.cnblogs.com/telwanggs/p/11056462.html
