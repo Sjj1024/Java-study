@@ -47,3 +47,5 @@ vue-cli3 在生产环境下禁用 eslint （非开发环境）：https://blog.cs
 vue前端post请求之坑：https://www.cnblogs.com/51python/p/11890656.html
 
 VueRouter-导航守卫、路由守卫：https://www.cnblogs.com/xshan/p/12364443.html
+
+VUE中AXIOS如何实现TOKEN验证:https://www.cnblogs.com/maxiag/p/12710889.html
