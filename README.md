@@ -21,3 +21,5 @@ Postman中post接口实战（上传文件、json请求）：https://www.cnblogs.
 Json，String，Map之间的转换：https://www.jianshu.com/p/81b8c1334db4
 
 vue项目里登录界面实现回车登录:https://www.cnblogs.com/aidixie/p/10722215.html
+
+解决vue-router出现message: "Navigating to current location ("/admin/index") is not allowed"的问题:https://blog.csdn.net/LonewoIf/article/details/103862282
