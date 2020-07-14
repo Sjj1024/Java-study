@@ -17,3 +17,5 @@ Spring Security - 获取当前登录用户的详细信息:https://blog.csdn.net/
 简谈a标签与添加点击事件：https://www.jianshu.com/p/ed20a8b19cc2
 
 Postman中post接口实战（上传文件、json请求）：https://www.cnblogs.com/ttxcs/p/11356141.html
+
+Json，String，Map之间的转换：https://www.jianshu.com/p/81b8c1334db4
