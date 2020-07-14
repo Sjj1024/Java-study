@@ -19,3 +19,5 @@ Spring Security - 获取当前登录用户的详细信息:https://blog.csdn.net/
 Postman中post接口实战（上传文件、json请求）：https://www.cnblogs.com/ttxcs/p/11356141.html
 
 Json，String，Map之间的转换：https://www.jianshu.com/p/81b8c1334db4
+
+vue项目里登录界面实现回车登录:https://www.cnblogs.com/aidixie/p/10722215.html
