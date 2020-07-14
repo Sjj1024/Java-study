@@ -11,3 +11,5 @@ sessionStorage、localStorage与cookie：https://www.cnblogs.com/beka/p/8621813.
 从vue源码看Vue.set()和this.$set():https://www.cnblogs.com/heavenYJJ/p/9559439.html
 
 在Vue中使用echarts：https://www.jianshu.com/p/cf0a54374419
+
+Spring Security - 获取当前登录用户的详细信息:https://blog.csdn.net/cloume/article/details/84983006
