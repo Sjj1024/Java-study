@@ -25,3 +25,5 @@ vue项目里登录界面实现回车登录:https://www.cnblogs.com/aidixie/p/107
 解决vue-router出现message: "Navigating to current location ("/admin/index") is not allowed"的问题:https://blog.csdn.net/LonewoIf/article/details/103862282
 
 tensorflow
+
+存在依赖但报错java.lang.NoClassDefFoundError：https://www.jianshu.com/p/d0819d24a747
