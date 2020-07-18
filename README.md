@@ -27,3 +27,5 @@ vue项目里登录界面实现回车登录:https://www.cnblogs.com/aidixie/p/107
 tensorflow
 
 存在依赖但报错java.lang.NoClassDefFoundError：https://www.jianshu.com/p/d0819d24a747
+
+SpringBoot + Vue + ElementUI 实现后台管理系统模板：https://www.cnblogs.com/l-y-h/p/12955001.html
