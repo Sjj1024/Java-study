@@ -33,3 +33,5 @@ SpringBoot + Vue + ElementUI 实现后台管理系统模板：https://www.cnblog
 变态的学习狂人:https://www.cnblogs.com/nickchen121/
 
 生成banner的网站：https://www.bootschool.net/ascii
+
+spring mvc请求流程图：https://blog.csdn.net/x763795151/article/details/88427096
