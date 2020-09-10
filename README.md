@@ -39,3 +39,5 @@ spring mvc请求流程图：https://blog.csdn.net/x763795151/article/details/884
 windows下查看端口占用、杀死进程：https://blog.csdn.net/fanrenxiang/article/details/82500907
 
 lombok使用基础教程:https://www.cnblogs.com/woshimrf/p/lombok-usage.html
+
+集合框架 Collection、Map：https://www.jianshu.com/p/589d58033841
