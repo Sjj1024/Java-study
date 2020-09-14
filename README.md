@@ -41,3 +41,7 @@ windows下查看端口占用、杀死进程：https://blog.csdn.net/fanrenxiang/
 lombok使用基础教程:https://www.cnblogs.com/woshimrf/p/lombok-usage.html
 
 集合框架 Collection、Map：https://www.jianshu.com/p/589d58033841
+
+java静态与非静态区别：https://www.cnblogs.com/muffe/p/6580208.html
+
+Java:单例模式我只推荐两种：https://juejin.im/post/6844903858276139021
