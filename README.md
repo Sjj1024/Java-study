@@ -49,3 +49,5 @@ java静态与非静态区别：https://www.cnblogs.com/muffe/p/6580208.html
 Java:单例模式我只推荐两种：https://juejin.im/post/6844903858276139021
 
 关于IOC和DI的理解：https://www.cnblogs.com/niuniu1985/archive/2010/01/13/1646375.html
+
+Java 动态代理详解：https://juejin.im/post/6844903744954433544
