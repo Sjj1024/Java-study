@@ -55,3 +55,6 @@ Java 动态代理详解：https://juejin.im/post/6844903744954433544
 Spring Boot 定时任务 @Scheduled：https://juejin.im/post/6844903968292732941
 
 SpringBoot整合Redis：https://juejin.im/post/6844903592554397703
+
+
+Dubbo+Zookeeper的简单入门案例：https://www.cnblogs.com/kitor/p/11016665.html
