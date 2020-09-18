@@ -51,3 +51,5 @@ Java:单例模式我只推荐两种：https://juejin.im/post/6844903858276139021
 关于IOC和DI的理解：https://www.cnblogs.com/niuniu1985/archive/2010/01/13/1646375.html
 
 Java 动态代理详解：https://juejin.im/post/6844903744954433544
+
+Spring Boot 定时任务 @Scheduled：https://juejin.im/post/6844903968292732941
