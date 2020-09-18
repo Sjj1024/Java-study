@@ -60,3 +60,5 @@ SpringBoot整合Redis：https://juejin.im/post/6844903592554397703
 Dubbo+Zookeeper的简单入门案例：https://www.cnblogs.com/kitor/p/11016665.html
 
 “中台”到底是什么？：https://zhuanlan.zhihu.com/p/75223466
+
+java环境配置：https://www.cnblogs.com/husiyu/p/12394171.html
