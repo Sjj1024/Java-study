@@ -53,3 +53,5 @@ Java:单例模式我只推荐两种：https://juejin.im/post/6844903858276139021
 Java 动态代理详解：https://juejin.im/post/6844903744954433544
 
 Spring Boot 定时任务 @Scheduled：https://juejin.im/post/6844903968292732941
+
+SpringBoot整合Redis：https://juejin.im/post/6844903592554397703
