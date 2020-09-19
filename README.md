@@ -66,3 +66,5 @@ java环境配置：https://www.cnblogs.com/husiyu/p/12394171.html
 [springBoot系列]--springBoot注解大全：https://www.cnblogs.com/tanwei81/p/6814022.html
 
 SpringBoot获取参数的几种方式:https://www.jianshu.com/p/ee150654f712
+
+浅谈var、let和const区别：https://juejin.im/post/6844903704189992973
