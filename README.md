@@ -64,3 +64,5 @@ Dubbo+Zookeeper的简单入门案例：https://www.cnblogs.com/kitor/p/11016665.
 java环境配置：https://www.cnblogs.com/husiyu/p/12394171.html
 
 [springBoot系列]--springBoot注解大全：https://www.cnblogs.com/tanwei81/p/6814022.html
+
+SpringBoot获取参数的几种方式:https://www.jianshu.com/p/ee150654f712
