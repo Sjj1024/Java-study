@@ -62,3 +62,5 @@ Dubbo+Zookeeper的简单入门案例：https://www.cnblogs.com/kitor/p/11016665.
 “中台”到底是什么？：https://zhuanlan.zhihu.com/p/75223466
 
 java环境配置：https://www.cnblogs.com/husiyu/p/12394171.html
+
+[springBoot系列]--springBoot注解大全：https://www.cnblogs.com/tanwei81/p/6814022.html
