@@ -68,3 +68,5 @@ java环境配置：https://www.cnblogs.com/husiyu/p/12394171.html
 SpringBoot获取参数的几种方式:https://www.jianshu.com/p/ee150654f712
 
 浅谈var、let和const区别：https://juejin.im/post/6844903704189992973
+
+axios POST提交数据的三种请求方式写法:https://segmentfault.com/a/1190000015261229?utm_source=tag-newest
