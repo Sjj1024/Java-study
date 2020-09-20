@@ -39,34 +39,3 @@ idea使用教程，pycharm使用教程
 spring mvc请求流程图：https://blog.csdn.net/x763795151/article/details/88427096
 
 windows下查看端口占用、杀死进程：https://blog.csdn.net/fanrenxiang/article/details/82500907
-
-lombok使用基础教程:https://www.cnblogs.com/woshimrf/p/lombok-usage.html
-
-集合框架 Collection、Map：https://www.jianshu.com/p/589d58033841
-
-java静态与非静态区别：https://www.cnblogs.com/muffe/p/6580208.html
-
-Java:单例模式我只推荐两种：https://juejin.im/post/6844903858276139021
-
-关于IOC和DI的理解：https://www.cnblogs.com/niuniu1985/archive/2010/01/13/1646375.html
-
-Java 动态代理详解：https://juejin.im/post/6844903744954433544
-
-Spring Boot 定时任务 @Scheduled：https://juejin.im/post/6844903968292732941
-
-SpringBoot整合Redis：https://juejin.im/post/6844903592554397703
-
-
-Dubbo+Zookeeper的简单入门案例：https://www.cnblogs.com/kitor/p/11016665.html
-
-“中台”到底是什么？：https://zhuanlan.zhihu.com/p/75223466
-
-java环境配置：https://www.cnblogs.com/husiyu/p/12394171.html
-
-[springBoot系列]--springBoot注解大全：https://www.cnblogs.com/tanwei81/p/6814022.html
-
-SpringBoot获取参数的几种方式:https://www.jianshu.com/p/ee150654f712
-
-浅谈var、let和const区别：https://juejin.im/post/6844903704189992973
-
-axios POST提交数据的三种请求方式写法:https://segmentfault.com/a/1190000015261229?utm_source=tag-newest
