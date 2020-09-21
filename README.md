@@ -41,3 +41,5 @@ spring mvc请求流程图：https://blog.csdn.net/x763795151/article/details/884
 windows下查看端口占用、杀死进程：https://blog.csdn.net/fanrenxiang/article/details/82500907
 
 Vue中this指向的问题:https://www.jianshu.com/p/7a2f99887a80，要想在箭头函数中使用this，可以在箭头函数外部使用that指向this，然后在箭头函数中使用that
+
+Java 语言 ArrayList 和 JSONArray 相互转换:https://www.cnblogs.com/miracle-luna/p/11143702.html
