@@ -45,3 +45,6 @@ Vue中this指向的问题:https://www.jianshu.com/p/7a2f99887a80，要想在箭�
 Java 语言 ArrayList 和 JSONArray 相互转换:https://www.cnblogs.com/miracle-luna/p/11143702.html
 
 springboot 之常用注解:https://juejin.im/post/6844903795047006221
+
+windows下安装和配置Redis: https://www.jianshu.com/p/e16d23e358c0
+redis可视化工具下载：https://www.jianshu.com/p/721c3762a777
