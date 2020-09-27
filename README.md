@@ -48,3 +48,7 @@ springboot 之常用注解:https://juejin.im/post/6844903795047006221
 
 windows下安装和配置Redis: https://www.jianshu.com/p/e16d23e358c0
 redis可视化工具下载：https://www.jianshu.com/p/721c3762a777
+
+
+SpringBoot利用Redis管理分布式Session：https://www.jianshu.com/p/fe9a6c3bda4e
+https://www.cnblogs.com/lxyit/p/9672097.html
