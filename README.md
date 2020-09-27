@@ -54,3 +54,5 @@ SpringBoot利用Redis管理分布式Session：https://www.jianshu.com/p/fe9a6c3b
 https://www.cnblogs.com/lxyit/p/9672097.html
 
 MongoDB可视化工具--Robo 3T 使用教程：https://www.cnblogs.com/tugenhua0707/p/9250673.html
+
+springBoot集成MongoDB(集群配置)：https://blog.csdn.net/zhenshilei0106/article/details/104521877
