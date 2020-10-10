@@ -56,3 +56,6 @@ https://www.cnblogs.com/lxyit/p/9672097.html
 MongoDB可视化工具--Robo 3T 使用教程：https://www.cnblogs.com/tugenhua0707/p/9250673.html
 
 springBoot集成MongoDB(集群配置)：https://blog.csdn.net/zhenshilei0106/article/details/104521877
+
+spingboot cors跨域解决方法：使用google浏览器的一个插件Allow CORS: Access-Control-Allow-Origin
+https://www.extfans.com/productivity/lhobafahddgcelffkeicbaginigeejlf/
