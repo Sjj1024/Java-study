@@ -67,3 +67,5 @@ windows下使用Wireshark调试chrome浏览器的HTTP/2流量：https://www.cnbl
 SpringCloud笔记：https://segmentfault.com/a/1190000018328721
 
 Auto.JS简介与教程:https://www.jianshu.com/p/4602db0618df
+
+把网页转换成EXE，制作自己想要的pc端：https://www.52pojie.cn/thread-922829-1-1.html
