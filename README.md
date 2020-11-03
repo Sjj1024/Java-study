@@ -71,3 +71,5 @@ Auto.JS简介与教程:https://www.jianshu.com/p/4602db0618df
 把网页转换成EXE，制作自己想要的pc端：https://www.52pojie.cn/thread-922829-1-1.html
 
 Mac 上使用 Python 制作压缩截图的：https://blog.csdn.net/Gdeer/article/details/100675602
+
+SpringSecurity认证流程源码详解:https://www.jianshu.com/p/e3496a31781c
