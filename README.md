@@ -73,3 +73,5 @@ Auto.JS简介与教程:https://www.jianshu.com/p/4602db0618df
 Mac 上使用 Python 制作压缩截图的：https://blog.csdn.net/Gdeer/article/details/100675602
 
 SpringSecurity认证流程源码详解:https://www.jianshu.com/p/e3496a31781c
+
+十六进制转换成十进制的具体算法？https://zhidao.baidu.com/question/1765987632785192540.html(二进制八进制等都相同)
